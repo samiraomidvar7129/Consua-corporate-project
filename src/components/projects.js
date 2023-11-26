@@ -1,12 +1,10 @@
 import React from 'react';
-import '../index.css';
 
-const Home=()=>{
+const Project=()=>{
     return(
         <>
-        
+        <h1>project</h1>
         </>
     )
 }
-export default Home;
-
+export default Project;

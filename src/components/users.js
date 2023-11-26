@@ -1,7 +1,7 @@
 import React ,{useEffect} from 'react';
 import '../index.css'
 import fetchUsers from '../redux/users/userActions';
-import {connect} from 'react-redux'
+import {connect, useDispatch} from 'react-redux'
 
 const Users =({loading,users,errorMessage,fetchUsers})=>{
     
@@ -9,7 +9,7 @@ const Users =({loading,users,errorMessage,fetchUsers})=>{
 
     fetchUsers();
 
-  },[]);
+  },[useDispatch]);
 
  if(loading){
     return <h2>در حال بارگذاری ....</h2>
