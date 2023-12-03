@@ -33,11 +33,11 @@ img{
 /*  Home Component Styles */
 .header-content{
     width: 100%;
-    height: 65vh;
+    height: 75vh;
     background-color: lightgray;
     position: relative;
 }
-.slider-wrapper{
+.slider-wrapper,.mySwiper{
     width: 100%;
     height: 100%;
 }
@@ -95,4 +95,176 @@ img{
     justify-content: space-around;
     align-items: center;
     text-align: center;
+}
+
+/* Srvices Component Styles */
+
+.services-wrapper{
+    width: 90%;
+    height: auto;
+    margin: 10px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+}
+.services-txtMute{
+    margin:10px 0;
+    color: #7b7878;
+    font-size: 13px;
+}
+.services-cards-item{
+    width: 100%;
+    height: 200px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    align-items: center;
+}
+.card-item{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 200px;
+    height: auto;
+}
+.services-icon{
+    font-size: 30px;
+    margin-bottom: 10px;
+    position: relative;
+}
+.services-icon::after{
+content: "";
+position: absolute;
+top: 40px;
+left: -15px;
+width:60px;
+height: 2px;
+background-color: gold;
+}
+.card-item-title{
+    font-size: 13px;
+    padding: 10px 0;
+}
+.card-item-p{
+    font-size: 12px;
+    margin-top: 10px;
+    color: #5a5858;
+    text-align: right;
+    line-height: 20px;
+}
+
+/* Projects Component Styles */
+
+.projects-wrapper{
+    width: 100%;
+    height: 300px;
+    background-color: darkblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* AboutUs Component Styles */
+
+.aboutUs-wrapper{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+}
+.aboutUs-title-p{
+    margin-top: 10px;
+    font-size: 13px;
+    color: #aaa;
+}
+.aboutUs-content{
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+.aboutUs-text{
+    width: 65%;
+    height: 100%;
+    padding: 0 15px;
+}
+.aboutUs-text p{
+    line-height: 30px;
+    font-size: 13px;
+    text-align: justify;
+}
+.aboutUs-imgBox{
+    width: 35%;
+    height: 100%;
+}
+.aboutUs-imgBox img{
+    border-radius: 10px;
+}
+
+
+/* Comments Component Styles */
+
+.comments-wrapper{
+    width: 80%;
+    height: auto;
+    text-align: center;
+    padding: 20px;
+    margin: 50px auto;
+}
+.comments-title-p{
+    font-size: 13px;
+    color: #aaa;
+    margin-top: 10px;
+}
+.comments-slider{
+width: 100%;
+height: 300px;
+}
+.slider-content{
+    width: 100%;
+    height: 200px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.comment-text{
+    font-size: 14px;
+    line-height: 30px;
+}
+.user-info{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content:center;
+    align-items: center;
+}
+.user-info img{
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    margin-left: 15px;
+}
+.user-name{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 13px;
+}
+.user-name span{
+    padding-top: 10px;
 }
