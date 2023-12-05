@@ -10,6 +10,8 @@ import Services from './services';
 import Project from './projects';
 import AboutUs from './aboutUs';
 import Commets from './comments';
+import Partners from './partners';
+import Footer from './footer';
 
 
 
@@ -34,6 +36,8 @@ const Home=()=>{
             <Project/>
             <AboutUs/>
             <Commets/>
+            <Partners/>
+            <Footer/>
         </>
     )
 }
