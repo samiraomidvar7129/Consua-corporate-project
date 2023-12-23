@@ -16,7 +16,6 @@ const projectReducer=(state=initialState,action)=>{
                 return{...state,loading:false,projects:action.payload , errorMessage:null}
               case FETCH_PROJECT_FAILLURE:
                 return{...state,loading:false,projects:[],errorMessage:action.payload}  
-
                 default:
                     return state;
     }

@@ -4,15 +4,16 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import fetchProjects from '../redux/project/projectActions';
-import {connect, useDispatch} from 'react-redux'
+import {connect} from 'react-redux';
+import Loader from './loading';
 
 const Project=({loading,projects,errorMessage,fetchProjects})=>{
     useEffect( ()=>{
         fetchProjects();
-      },[useDispatch]);
+      },[]);
       
       if(loading){
-        return <h2>در حال بارگذاری ....</h2>
+        return <div><Loader/></div>
      }
      if(errorMessage){
         return <p>error: {errorMessage}</p>
@@ -43,6 +44,7 @@ const Project=({loading,projects,errorMessage,fetchProjects})=>{
             })
         }
         
+        
       </Swiper>
         </section>
            
@@ -56,7 +58,5 @@ const mapStateToProps=state =>(
         errorMessage:state.errorMessage
     }
 )
-
-
 
 export default  connect(mapStateToProps,{fetchProjects})(Project);

@@ -1,35 +1,30 @@
 import React from 'react';
-import {Field, Formik,Form} from 'formik'
+import '../index.css';
+import {Formik } from 'formik'
 
 const MembershipForm=()=>{
     return(
-        <section className='MembershipForm'>
-         <Formik initialValues={{email:""}}
-        //  onSubmit={(values)=>{
-        //   alert('فرم ارسال شد')
-        //  }}
-         validate={(values)=>{
-          const error={};
-          if(!values.email){
-            error.email="قالب ایمیل نادرست است";
-          }
-          return error;
+        <div>
+        <Formik
+        initialValues={{email:'info@gmail.com'}}
+         onSubmit={(values)=>{
+            console.log(values);
          }}
-         >
-         {
-          ({error})=>(
-            <Form action='#' method='post' className='form-parent' >
-            <h6 className='form-title'>ایمیل خود را وارد کنید</h6>
-         <div className='form-input-items'>
-         <div><Field type='email' name='email'/></div>
-         {error.email &&  <span>{error.email}</span>}
-         <div><button type='submit'>ثبت</button></div>
-         </div>
-           </Form>
-          )
-         }
-         </Formik>
-        </section>
+        >
+        {
+            ({values,handleChange,handleSubmit})=>(
+                
+                <form className='newsLater-form' onSubmit={handleSubmit}>
+                <div className='newsLater-form_item'>
+                    <input type='email' id='email'  name='email' placeholder='ایمیل' value={values.email} onChange={handleChange}/>
+                    <button type='submit' className='news-btn'>ارسال</button>
+                </div>
+            </form>
+            )
+          }
+        </Formik>
+            
+           </div>
     )
 }
 export default MembershipForm;

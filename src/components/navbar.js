@@ -1,21 +1,17 @@
 import React from 'react';
 import '../index.css';
-import Home from './home';
-import Services from './services';
-import Projects from './projects';
-import AboutUs from './aboutUs';
-import ContactUs from './contactUs';
-import { GoSearch } from "react-icons/go";
+import LogoBox from './logoBox';
+// import Login_Search from './login&search';
+import {Link} from 'react-router-dom';
 import { CiUser } from "react-icons/ci";
-import {Link,Routes,Route} from 'react-router-dom';
+import { GoSearch } from "react-icons/go";
+
+
 
 const Navbar =()=>{
     return(
-        <>
     <section className='navbar-wrapper'>
-        <div className='logo-box'>
-            <img className='logo-img' src='images/Logo/logo.png' alt='logo.png'/>
-        </div>
+       <LogoBox/>
       <nav className='navbar-nav'>
        <ul className='navbar-menu'>
         <li className='navbar-link'><Link to='/'>صفحه اصلی</Link></li>
@@ -25,19 +21,12 @@ const Navbar =()=>{
         <li className='navbar-link'><Link to='contact-us'> ارتباط باما</Link></li>
        </ul>
       </nav>
-      <Routes>
-        <Route path="/home"           element={<Home/>} ></Route>
-        <Route path="/services"   element={<Services/>} ></Route>
-        <Route path="/projects"   element={<Projects/>} ></Route>
-        <Route path="/about-us"   element={<AboutUs/>} ></Route>
-        <Route path="/contact-us" element={<ContactUs/>} ></Route>
-        </Routes>
-        <div className='searchBar-box'>
-            <span className='search-icon'><GoSearch/></span>
-            <span className='user-icon'><CiUser/></span>
-        </div>
+  
+        <span><Link to='/login'> <span className='user-icon'><CiUser/></span></Link></span>
+        <span><Link to='/search'><span className='search-icon'><GoSearch/></span></Link></span>
+
     </section>
-        </>
+
     )
 }
 export default Navbar;

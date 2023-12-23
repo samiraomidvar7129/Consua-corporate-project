@@ -5,7 +5,7 @@ import "swiper/css";
 import "swiper/css/pagination";
 import { Pagination } from "swiper/modules";
 
-const Commets = () => {
+const Comments = () => {
   return (
     <section className="comments-wrapper">
       <div className="comments-title">
@@ -70,4 +70,4 @@ const Commets = () => {
     </section>
   );
 };
-export default Commets;
+export default Comments;

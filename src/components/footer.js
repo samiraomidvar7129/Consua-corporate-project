@@ -1,12 +1,8 @@
 import React from "react";
 import '../index.css';
 import {Link,Routes,Route} from 'react-router-dom';
-import Home from "./home";
-import Services from "./services";
-import Projects from "./projects";
-import AboutUs from "./aboutUs";
-import ContactUs from "./contactUs";
 import MembershipForm from "./membershipForm";
+
 
 
 const Footer = () => {
@@ -24,7 +20,7 @@ const Footer = () => {
         </div>
         <div className="footer-item">
             <h5>دسترسی سریع</h5>
-            <nav className="footer-links">
+            {/* <nav className="footer-links">
        <ul >
         <li><Link className="footer-link" to='/'>صفحه اصلی</Link></li>
         <li><Link className="footer-link" to='services'> خدمات</Link></li>
@@ -39,12 +35,12 @@ const Footer = () => {
         <Route path="/projects"   element={<Projects/>} ></Route>
         <Route path="/about-us"   element={<AboutUs/>} ></Route>
         <Route path="/contact-us" element={<ContactUs/>} ></Route>
-        </Routes>
+        </Routes> */}
         </div>
         <div className="footer-item">
             <h5> عضویت در خبرنامه</h5>
           <div>
-            <MembershipForm/>
+           <MembershipForm/>
           </div>
         </div>
       </div>

@@ -21,37 +21,43 @@ img{
     width: 100%;
     height: 100%;
 }
-
+input::placeholder{
+    text-align: right;
+    font-size: 12px;
+}
 /*  Home Component Styles */
 
-.header-content{
+
+.slider-wrapper{
     width: 100%;
-    height: 75vh;
-    background-color: lightgray;
+    height: 100vh;
     position: relative;
 }
-.slider-wrapper,.mySwiper{
+.mySwiper{
     width: 100%;
     height: 100%;
 }
-
+.routes{
+    width: 100%;
+    height: auto;
+}
 /* Navbar Component Styles */
 
 .navbar-wrapper{
     width: 90%;
     height: 60px;
-    background-color: #fff;
+    margin:0 auto;
+    background-color: #ffff;
     border-radius: 7px;
     padding: 10px;
-    position: absolute;
-    top: 15px;
-    left: 5%;
-    z-index: 11;
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
     align-items: center;
-    overflow: hidden;
+    position: fixed;
+    top: 10px;
+    left: 4%;
+    z-index: 10;
 }
 .navbar-nav{
     width: 70%;
@@ -94,9 +100,9 @@ img{
 /* Services Component Styles */
 
 .services-wrapper{
-    width: 90%;
+    width: 100%;
     height: auto;
-    margin: 10px auto;
+    margin: 20px auto;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -111,8 +117,9 @@ img{
 }
 .services-cards-item{
     width: 100%;
-    height: 200px;
+    height: auto;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row-reverse;
     justify-content: space-around;
     align-items: center;
@@ -196,6 +203,14 @@ background-color: gold;
 .mySwiper-content h5{
     margin-top: 15px;
 }
+#loading-parent{
+    display: block;
+    margin: 0 auto;
+    text-align:center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 /* AboutUs Component Styles */
 
@@ -239,6 +254,86 @@ background-color: gold;
 }
 .aboutUs-imgBox img{
     border-radius: 10px;
+}
+
+/* ContactUs Component Styles */
+
+.contactUs-title,.login-title{
+text-align: center;
+margin: 20px auto;
+}
+.contactUs-wrapper{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.form-imgBox{
+width: 50%;
+height:400px;
+padding: 20px;
+}
+.form-item{
+    width: 50%;
+    height: 100%;
+    padding: 20px;
+}
+.form{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid silver;
+}
+.form-control{
+    margin-top: 10px;
+}
+.input-item{
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.input-item_inner{
+    display: flex;
+}
+#userName,#userEmail{
+    width:340px;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid #908f8f;
+    outline: none;
+    padding: 0 10px;
+}
+#userEmail{
+    width: 330px;
+}
+#lastName{
+    width: 300px;
+}
+label{
+    font-size: 12px;
+}
+.error-message{
+display: none;
+}
+.submit-btn{
+    width: 200px;
+    height: 40px;
+    background-color: rgb(10, 157, 10);
+    color: #fff;
+    text-align: center;
+    padding: 7px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 5px;
 }
 
 /* Comments Component Styles */
@@ -317,8 +412,8 @@ height: 300px;
     margin-top: 50px;
 }
 .partners-logo div{
-    width: 80px;
-    height: 70px;
+    width: 70px;
+    height: 50px;
 }
 .partners-title-p{
     margin-top: 10px;
@@ -380,7 +475,7 @@ height: 300px;
 
  /* MembershipForm Component Styles */
 
- .form-parent{
+ .newsLater-form{
     width: 200px;
     height: 30px;
     margin-top: 30px;
@@ -389,7 +484,7 @@ height: 300px;
     justify-content: center;
     align-items: center;
  }
- .form-input-items{
+ .newsLater-form_item{
     width: 100%;
     height: 100%;
     display: flex;
@@ -398,8 +493,7 @@ height: 300px;
     align-items: center;
     margin-top: 10px;
  } 
-
- .form-input-items div input{
+ .newsLater-form_item  input{
     width: 200px;
     height: 30px;
     border: none;
@@ -409,12 +503,57 @@ height: 300px;
     caret-color: goldenrod;
     font-size: 10px;
  }
- .form-input-items  button{
+ .newsLater-form_item button{
     height: 30px;
     text-align: center;
-    background-color: rgb(234, 231, 26);
+    background-color: rgb(224, 203, 15);
     padding: 5px;
     border: none;
     outline: none;
     cursor: pointer;
+    font-size: 12px;
  }
+
+
+ /* Login Component Styles */
+
+ .loginForm{
+    width: 50%;
+    height:200px;
+    margin: 10px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid silver;
+ }
+ .loginForm-item{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: start;
+ }
+ .userName-login,
+ .lastName-login{
+    width: 200px;
+    height: 30px;
+    padding: 10px;
+ } 
+#userEmail-login{
+    width:430px;
+    padding: 10px;
+    margin-top: 20px;
+}
+.loginForm-btn{
+    margin-top: 20px;
+    width: 200px;
+    height: 40px;
+    background-color: rgb(10, 157, 10);
+    color: #fff;
+    text-align: center;
+    padding: 7px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
