@@ -23,7 +23,7 @@ const Project=({loading,projects,errorMessage,fetchProjects})=>{
         <section className='projects-wrapper'>
         <div className='projects-title'>
           <h3>پروژه ها</h3>
-          <p className='projects-title-p'>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ</p>
+          <p className='projects-title-p'> امنیت سایبری یکی از دغدغه های اصلی کسب و کارهای کوچک است</p>
         </div>
         <section className='projects-slider'>
         <Swiper

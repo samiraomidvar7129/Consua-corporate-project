@@ -2,31 +2,31 @@
   "projects": [
     {
       "id": 1,
-      "title": "پروژه شماره -۱",
-      "img": "images/Projects/blog-6.jpg"
+      "title": "  پردازنده کوآنتومی",
+      "img": "images/Projects/project-1.jpg"
     },
     {
       "id": 2,
-      "title": "پروژه شماره -۲",
-      "img": "images/Projects/blog-5.jpg"
+      "title": " ربان انسان نمای",
+      "img": "images/Projects/project-2.jpeg"
     },{
       "id": 3,
-      "title": "پروژه شماره -۳",
-      "img": "images/Projects/blog-4.jpg"
+      "title": "  هدفون بیسیم Glab",
+      "img": "images/Projects/project-1.jpg"
     }
     ,{
       "id": 4,
-      "title": "پروژه شماره -۴",
-      "img": "images/Projects/blog-3.jpg"
+      "title": " ساعت هوشند کاسیو",
+      "img": "images/Projects/project-2.jpeg"
     },
     {
       "id": 5,
-      "title": "پروژه شماره -۵",
-      "img": "images/Projects/blog-2.jpg"
+      "title": "  هوش مصنوعی گوگل",
+      "img": "images/Projects/project-1.jpg"
     },{
       "id": 6,
-      "title": "پروژه شماره -۶",
-      "img": "images/Projects/blog-1.jpg"
+      "title": "    هدست اپل",
+      "img": "images/Projects/project-2.jpeg"
     }
   ]
 }

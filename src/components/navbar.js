@@ -1,10 +1,10 @@
 import React from 'react';
 import '../index.css';
 import LogoBox from './logoBox';
-// import Login_Search from './login&search';
 import {Link} from 'react-router-dom';
 import { CiUser } from "react-icons/ci";
-import { GoSearch } from "react-icons/go";
+import { MdOutlinePhoneEnabled } from "react-icons/md";
+
 
 
 
@@ -22,8 +22,8 @@ const Navbar =()=>{
        </ul>
       </nav>
   
+        <span className='phone-icon'><MdOutlinePhoneEnabled/> <h6>۱۲-۳۶۶-۲۵</h6></span>
         <span><Link to='/login'> <span className='user-icon'><CiUser/></span></Link></span>
-        <span><Link to='/search'><span className='search-icon'><GoSearch/></span></Link></span>
 
     </section>
 

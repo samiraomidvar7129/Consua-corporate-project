@@ -41,13 +41,14 @@ input::placeholder{
     width: 100%;
     height: auto;
 }
+
 /* Navbar Component Styles */
 
 .navbar-wrapper{
     width: 90%;
     height: 60px;
     margin:0 auto;
-    background-color: #ffff;
+    background-color:#1E293B;
     border-radius: 7px;
     padding: 10px;
     display: flex;
@@ -58,6 +59,7 @@ input::placeholder{
     top: 10px;
     left: 4%;
     z-index: 10;
+    color: #ffff !important;
 }
 .navbar-nav{
     width: 70%;
@@ -78,7 +80,7 @@ input::placeholder{
     font-size: 13px;
 }
 .navbar-link a{
-    color: #010101;
+    color: #ffff;
 }
 .logo-box{
     width: 20%;
@@ -96,7 +98,53 @@ input::placeholder{
     align-items: center;
     text-align: center;
 }
+.phone-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row-reverse;
+    margin-left: 13px;
+    color: #ffff;
+}
+.user-icon{
+    color: #ffff;
+}
+.phone-icon h6{
+    font-size: 10px;
+    margin-right: 5px;
+}
 
+/* Solutions Component Styles */
+
+.solution-wrapper{
+    width: 100%;
+    height: auto;
+    background-color: transparent;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.solution-content{
+    width: 60%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: end;
+    text-align: right;
+    padding: 20px;
+}
+.solution-title{
+    color: #5e88c6;
+}
+.solution-h2,
+.solution-text{
+    margin-top: 15px;
+}
+.solution-imgBox{
+    width: 40%;
+}
 /* Services Component Styles */
 
 .services-wrapper{
@@ -280,41 +328,46 @@ padding: 20px;
     padding: 20px;
 }
 .form{
-    width: 100%;
+    width: auto;
     height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     border: 1px solid silver;
+    border-radius: 5px;
+    padding: 15px;
+    overflow: hidden;
+
 }
 .form-control{
     margin-top: 10px;
 }
 .input-item{
     width: 100%;
-    height: 40px;
+    height: auto;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    margin-top: 10px;
 }
 .input-item_inner{
+    width: 100%;
     display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: end;
 }
-#userName,#userEmail{
-    width:340px;
-    height: 40px;
-    border-radius: 5px;
-    border: 1px solid #908f8f;
+.input-item_inner input{
+    width: 100%;
+    margin-top: 7px;
+    border: none;
+    border: 1px solid silver;
+    padding: 10px;
+    text-align: right;
     outline: none;
-    padding: 0 10px;
-}
-#userEmail{
-    width: 330px;
-}
-#lastName{
-    width: 300px;
+    border-radius: 5px;    
 }
 label{
     font-size: 12px;
@@ -334,6 +387,18 @@ display: none;
     border: none;
     cursor: pointer;
     margin-bottom: 5px;
+}
+#textarea{
+    width: 385px;
+    height: 150px;
+    margin: 10px auto;
+    resize: none;
+    outline: none;
+    border: none;
+    border: 1px solid silver;
+    padding: 10px;
+    text-align: right;
+    border-radius: 5px;
 }
 
 /* Comments Component Styles */
@@ -425,11 +490,13 @@ height: 300px;
 
  .footer{
     width: 100%;
-    height: 200px;
+    height: 250px;
     background-color: #1E293B;
     color: #ffff;
-    padding: 20px;
+    padding: 20px auto 20px auto ;
     font-size: 13px;
+    border-top: 1px solid silver;
+
  }
  .footer-content{
     width: 100%;
@@ -445,19 +512,29 @@ height: 300px;
     display: flex;
     flex-direction: column;
     justify-content:center;
-    align-items: center;
+    align-items:center;
     text-align: center;
+ }
+ .footer-item-txt{
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    align-items: end;
+    text-align: right;
  }
  .footer-item-img{
     width: 100px;
-    height: 70px;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
+    height: 50px;
+ }
+ .footer-item-img img{
+    display: block;
+    width: 100%;
+    height: 100%;
  }
  .footer-item-p{
     text-align: right;
     line-height: 25px;
+ padding-top: 12px;
  }
  .footer-logo{
     width: 60px;
@@ -472,67 +549,102 @@ height: 300px;
  .footer-link {
     color: #ffff ;
  }
-
- /* MembershipForm Component Styles */
-
- .newsLater-form{
-    width: 200px;
-    height: 30px;
-    margin-top: 30px;
+.work-time{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.work-time_span{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
- }
- .newsLater-form_item{
+}
+.work-time span{
+    margin-top: 25px;
+}
+.work-time_clock{
+    width: 50px;
+    height: 50px;
+}
+.clock-icon{
     width: 100%;
     height: 100%;
+    margin-left: 10px;
+}
+
+  /* SocialNetworks Component Styles */
+
+ .socialNetworks{
+    width: 100%;
+    height: auto;
+}
+.socialNetworks ul{
     display: flex;
-    flex-direction: row-reverse;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 15px;
+}
+.socialNetworks ul li{
+    width: 30px;
+    height: 30px;
+    background-color: #2b3950;
+    border-radius: 100%;
+    display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 10px;
- } 
- .newsLater-form_item  input{
-    width: 200px;
-    height: 30px;
-    border: none;
-    outline: none;
-    text-align: right ;
-    padding-right: 6px;
-    caret-color: goldenrod;
-    font-size: 10px;
- }
- .newsLater-form_item button{
-    height: 30px;
     text-align: center;
-    background-color: rgb(224, 203, 15);
+}
+.social-icon{
+    color: #ffff;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+}
+
+/* Links Component Styles */
+
+.links-list li,.explorations-list li{
+    margin-top: 8px;
     padding: 5px;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    font-size: 12px;
- }
+    background-color: #ffff;
+    transition:all .5s ease;
+} 
 
 
  /* Login Component Styles */
 
  .loginForm{
     width: 50%;
-    height:200px;
+    height:auto;
     margin: 10px auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     border: 1px solid silver;
+    border-radius: 6px;
+    padding: 10px 0;
  }
  .loginForm-item{
     width: 100%;
+    height: 100%;
     display: flex;
+    flex-direction: column;
     justify-content: space-around;
-    align-items: start;
+    padding: 20px;
+    font-size: 12px;
+    text-align: right;
  }
+.filed-input{
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    border: 1px solid silver;
+}
  .userName-login,
  .lastName-login{
     width: 200px;
@@ -544,8 +656,8 @@ height: 300px;
     padding: 10px;
     margin-top: 20px;
 }
-.loginForm-btn{
-    margin-top: 20px;
+.register-btn{
+    margin: 20px auto 0 auto;
     width: 200px;
     height: 40px;
     background-color: rgb(10, 157, 10);
@@ -556,4 +668,10 @@ height: 300px;
     outline: none;
     border: none;
     cursor: pointer;
+}
+.errorMessage{
+    color: red;
+    font-size: 11px;
+    padding-top: 6px;
+    /* text-align: right !important; */
 }
