@@ -16,7 +16,7 @@ import * as Yup from 'yup'
 
       validationSchema: Yup.object({
         userName:Yup.string().max(12,'نام کاربری باید ۱۲ کاراکتر باشد').required('کاربر گرامی ! لطفا فیلد را پر کنید'),
-        email:Yup.string().email('invalid email').required('کاربر گرامی ! لطفا فیلد را پر کنید'),
+        email:Yup.string().email('قالب ایمیل نامعتبر است ').required('کاربر گرامی ! لطفا فیلد را پر کنید'),
       })
     })
     
@@ -25,7 +25,7 @@ import * as Yup from 'yup'
         <h2 className='contactUs-title'>  آیا سوالی دارید ؟ *   </h2>
         <section className='contactUs-wrapper'>
             <div className='form-imgBox'>
-                <img src='images/ContactUs-img/contact.jpg'/>
+                <img src='images/ContactUs-img/contact-img.jpeg'/>
             </div>
            <div className='form-item'>
 

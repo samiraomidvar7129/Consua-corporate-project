@@ -11,7 +11,6 @@ import Projects from './components/projects';
 import ContactUs from './components/contactUs';
 import Footer from './components/footer'
 import Login from './components/login';
-import SearchBar from './components/serachBar';
 
 
 const App=()=>{
@@ -27,7 +26,7 @@ return (
         <Route path="/about-us"  element={<AboutUs/>}  ></Route>
         <Route path="/contact-us"  element={<ContactUs/>}  ></Route>
         <Route path="/login"  element={<Login/>} ></Route>
-        <Route path="/search"  element={<SearchBar/>} ></Route>
+      
         </Routes>
         </section> 
         <Footer/>

@@ -14,10 +14,10 @@ const Home=()=>{
             <Swiper pagination={true} modules={[Pagination]}
              className="mySwiper">
         <SwiperSlide>
-            <img src='images/Slider-img/slide-3.jpg' alt='slider-img'/>
+            <img src='images/Slider-img/img-4.jpg' alt='slider-img'/>
         </SwiperSlide>
         <SwiperSlide>
-            <img src='images/Slider-img/slide-2.jpg' alt='slider-img'/>
+            <img src='images/Slider-img/img-3.jpg' alt='slider-img'/>
         </SwiperSlide>
         </Swiper>
         </section>
