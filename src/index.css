@@ -269,6 +269,9 @@ background-color: gold;
 .mySwiper-content h5{
     margin-top: 15px;
 }
+
+/* Loading Component Styles */
+
 #loading-parent{
     display: block;
     margin: 0 auto;
@@ -276,6 +279,11 @@ background-color: gold;
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
+}
+#loading-parent h4{
+    color: green;
+    padding: 20px;
 }
 
 /* AboutUs Component Styles */
