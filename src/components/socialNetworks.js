@@ -16,7 +16,7 @@ const SocialNetworks= () => {
         <ul>
         <li><a href='#'><CiYoutube className='social-icon'/> </a></li>
         <li><a href='#'><FaWhatsapp className='social-icon'/> </a></li>
-        <li><a href='#'><GrLinkedinOption className='social-icon'/></a></li>
+        <li><a href='https://www.linkedin.com/in/samira-omidvar-6038ab234'><GrLinkedinOption className='social-icon'/></a></li>
         <li><a href='#'><RiTwitterLine className='social-icon'/>  </a></li>
         <li><a href='#'><TiSocialFacebook className='social-icon'/> </a></li>
       </ul>

@@ -31,6 +31,7 @@ const Project=({loading,projects,errorMessage,fetchProjects})=>{
         spaceBetween={30}
         pagination={{
           clickable: true,
+          loop:true
         }}
         className="mySwiper mySwiper-container" >
          {
