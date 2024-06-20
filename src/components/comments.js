@@ -1,69 +1,62 @@
 import React from "react";
 import '../index.css';
 import { Swiper, SwiperSlide } from "swiper/react";
+
+// Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
-import { Pagination } from "swiper/modules";
+import "swiper/css/navigation";
+
+// import './styles.css';
+
+// import required modules
+import { Autoplay } from "swiper/modules";
 
 const Comments = () => {
   return (
     <section className="comments-wrapper">
       <div className="comments-title">
         <h3>نظرات کاربران</h3>
-        <p className="comments-title-p">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ</p>
       </div>
       <section className="comments-slider">
-        <Swiper pagination={true} modules={[Pagination]} className="mySwiper">
-          <SwiperSlide>
-            <div className="slider-content">
-            <p className="comment-text">
-                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با
-                استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله
-                در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد
-                نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد
-              </p>
-              <div className="user-info">
-                <img src="images/Users/avatar-1.jpg" alt="user-1" />
-                <span className="user-name">
-                  <span>سهیلا صادقی</span>
-                  <span>طراح گرافیک</span>
-                </span>
-              </div>
-            </div>
+      <Swiper
+          slidesPerView={1}
+          spaceBetween={30}
+          loop={true}
+          autoplay={{
+            delay: 2500,
+            disableOnInteraction: false,
+          }}
+          
+          modules={[Autoplay]}
+          className="mySwiper"
+        >
+          <SwiperSlide className="swiperSlide">
+            <h1 className="mySwiper-title">استراتژی هایی برای موفقیت پایدار</h1>
+            <p className="mySwiper-txt">
+              لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
+              استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله
+              در ستون و سطرآنچنان که لازم است
+            </p>
+            <CounselingBtn />
           </SwiperSlide>
-          <SwiperSlide>
-            <div className="slider-content">
-            <p className="comment-text">
-                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با
-                استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله
-                در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد
-                نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد
-              </p>
-              <div className="user-info">
-                <img src="images/Users/avatar-2.jpg" alt="user-2" />
-                <span className="user-name">
-                  <span> یاسمین شیردل</span>
-                  <span> توسعه دهنده وب</span>
-                </span>
-              </div>
-            </div>
+          <SwiperSlide className="swiperSlide">
+            <h1 className="mySwiper-title">تجزیه و تحلیل مالی برای توسعه</h1>
+            <p className="mySwiper-txt">
+              لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
+              استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله
+              در ستون و سطرآنچنان که لازم است
+            </p>
+            <CounselingBtn />
           </SwiperSlide>
-          <SwiperSlide>
-            <div className="slider-content">
-              <p className="comment-text">
-                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با
-                استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله
-                در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد
-                نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد
-              </p>
-              <div className="user-info">
-                <img src="images/Users/avatar-3.jpg" alt="user-3" />
-                <span className="user-name">
-                  <span> نازنین پشتیبان</span>
-                  <span> توسع دهنده بک اند</span>
-                </span>
-              </div>
-            </div>
+          <SwiperSlide className="swiperSlide">
+            <h1 className="mySwiper-title">تجزیه و تحلیل مالی برای توسعه</h1>
+            <p className="mySwiper-txt">
+              لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
+              استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله
+              در ستون و سطرآنچنان که لازم است
+            </p>
+            <CounselingBtn />
           </SwiperSlide>
         </Swiper>
       </section>

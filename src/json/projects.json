@@ -2,31 +2,37 @@
   "projects": [
     {
       "id": 1,
-      "title": "  پردازنده کوآنتومی",
-      "img": "images/Projects/project-1.jpg"
+      "title": "     مشاوره , استخدام",
+      "description":"مقابله با آب و هوای فعلی",
+      "img": "images/Projects/project1.jpg"
     },
     {
       "id": 2,
-      "title": " ربان انسان نمای",
-      "img": "images/Projects/project-2.jpeg"
+      "title": "     مشاوره , استخدام",
+      "description":"کارمندان هدف محور موفق میشوند",
+      "img": "images/Projects/project2.jpg"
     },{
       "id": 3,
-      "title": "  هدفون بیسیم Glab",
-      "img": "images/Projects/project-1.jpg"
+      "title": "     مشاوره , استخدام",
+      "description":"تیم های خوب پس از بحران پاسخ میدهند",
+      "img": "images/Projects/project1.jpg"
     }
     ,{
       "id": 4,
-      "title": " ساعت هوشند کاسیو",
-      "img": "images/Projects/project-2.jpeg"
+      "title": "     مشاوره , استخدام",
+      "description":"کارمندان هدف محور موفق میشوند",
+      "img": "images/Projects/project2.jpg"
     },
     {
       "id": 5,
-      "title": "  هوش مصنوعی گوگل",
-      "img": "images/Projects/project-1.jpg"
+      "title": "     مشاوره , استخدام",
+      "description":"کارمندان هدف محور موفق میشوند",
+      "img": "images/Projects/project1.jpg"
     },{
       "id": 6,
-      "title": "    هدست اپل",
-      "img": "images/Projects/project-2.jpeg"
+      "title": "     مشاوره , استخدام",
+      "description":"کارمندان هدف محور موفق میشوند",
+      "img": "images/Projects/project2.jpg"
     }
   ]
 }

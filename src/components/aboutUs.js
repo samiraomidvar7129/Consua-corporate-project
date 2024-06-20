@@ -6,8 +6,7 @@ const AboutUs = () => {
     <section className="aboutUs-wrapper">
       <div className="aboutUs-title">
         <h2 className="aboutUs-title-text">درباره شرکت</h2>
-        <p className="aboutUs-title-p">
-        شرکت راه حل فناوری اطلاعات ما متعهد به ارائه خدمات و پشتیبانی         </p>
+       
       </div>
       <div className="aboutUs-content">
         <div className="aboutUs-text">
@@ -20,7 +19,7 @@ const AboutUs = () => {
           </p>
         </div>
         <div className="aboutUs-imgBox">
-          <img src="images/AboutUs-img/aboutUs.jpg" alt="aboutUs-img" />
+          <img src="images/AboutUs-img/about.png" alt="aboutUs-img" />
         </div>
       </div>
     </section>
