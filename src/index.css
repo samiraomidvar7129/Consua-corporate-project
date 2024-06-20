@@ -665,8 +665,8 @@ label {
 
 .footer {
   width: 100%;
-  height: 250px;
-  background: rgb(0, 28, 73);
+  height: 400px;
+  background: rgb(20,22,27);
   color: #ffff;
   padding: 20px auto 20px auto;
   font-size: 13px;
@@ -693,9 +693,12 @@ label {
 .footer-item-txt {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
-  align-items: end;
+  justify-content: center;
+  align-items: center;
   text-align: right;
+}
+.footer-item-title{
+    text-align: center !important;
 }
 .footer-item-img {
   width: 100px;
@@ -711,7 +714,8 @@ label {
 .footer-item-p {
   text-align: right;
   line-height: 25px;
-  padding-top: 12px;
+ margin: 30px auto;
+  color: rgb(210,210,212);
 }
 .footer-logo {
   width: 60px;
@@ -726,12 +730,33 @@ label {
 .footer-link {
   color: #ffff;
 }
-.work-time {
+.workTime-parent{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    color: rgb(179,180,183);
+}
+.workTime-logoBox{
+    width: 100%;
+    height: 60px;
+}
+.workTime-logoBox img{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.workTime-txt{
+   padding-top: 30px;
+
+}
+.workTime-content {
+    padding-top: 40px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.work-time_span {
+.workTime-span {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -765,7 +790,7 @@ label {
 .socialNetworks ul li {
   width: 30px;
   height: 30px;
-  background-color: #2b3950;
+  background-color: rgb(51,53,60);
   border-radius: 100%;
   display: flex;
   justify-content: center;
@@ -781,17 +806,20 @@ label {
 
 /* Links Component Styles */
 
+.explorations-parent,.links-parent{
+    margin-top: 30px;
+}
+
 .links-list li,
 .explorations-list li {
   padding: 5px;
-  background-color: #ffff;
   display: inline-block;
   width: 80%;
   margin: 7px auto;
 }
 .links-list li a,
 .explorations-list li a {
-  color: #010101;
+  color: rgb(192,193,195);
 }
 .links-list li:hover a,
 .explorations-list li:hover a {

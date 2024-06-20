@@ -6,22 +6,22 @@ const Links = () => {
   return (
     <div className='links-wrapper'>
         <h5>پیوندها</h5>
-        <div>
+        <div className='links-parent'>
             <ul className='links-list'>
                 <li>
-                    <a href='#'>درباره ما</a>
+                    <a href='#'> مدیریت سرمایه گذاری</a>
                 </li>
                 <li>
-                    <a href='#'>ماموریت ما</a>
+                    <a href='#'> برنامه ریزی کسب و کار</a>
                 </li>
                 <li>
-                    <a href='#'>تیم های ما</a>
+                    <a href='#'>  توصیه های مالی</a>
                 </li>
                 <li>
-                    <a href='#'>پروژه ها</a>
+                    <a href='#'> استراتژی مالیاتی</a>
                 </li>
                 <li>
-                    <a href='#'>ملاقات ما</a>
+                    <a href='#'> استراتژی بیمه</a>
                 </li>
             </ul>
         </div>

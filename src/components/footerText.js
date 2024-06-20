@@ -7,7 +7,7 @@ const FooterText = () => {
   return (
     <div className="footer-item-txt">
        
-       <h2> خبرنامه</h2>
+       <h2 className='footer-item_title'> خبرنامه</h2>
 
         
           <p className="footer-item-p">
