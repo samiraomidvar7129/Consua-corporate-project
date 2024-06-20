@@ -27,6 +27,7 @@ const Navbar =()=>{
     return(
     <nav className='navbar-wrapper' >
      <LogoBox className="logoBox"/>
+     
      <div className='navbar-toggler' onClick={navToggler}>
         <div className='line1'></div>
         <div className='line2'></div>
