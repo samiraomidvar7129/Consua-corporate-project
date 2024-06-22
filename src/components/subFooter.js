@@ -1,4 +1,5 @@
 import React from "react";
+import {Link} from 'react-router-dom'
 
 const SubFooter = () => {
   return (
@@ -9,9 +10,9 @@ const SubFooter = () => {
         </div>
         <div className="subFooter-inner_item">
             <ul className="subFooter-inner_item--list">
-                <li><a className="subFooter-inner_item--list-link" href="" title="">مقررات</a></li>
-                <li><a className="subFooter-inner_item--list-link" href="" title="">خط مشی</a></li>
-                <li><a className="subFooter-inner_item--list-link" href="" title="">پشتیبانی</a></li>
+                <li><Link className="subFooter-inner_item--list-link" to="https://demo.unlimitedweb.ir/Consua/new/corporate-business/" title="">مقررات</Link></li>
+                <li><Link className="subFooter-inner_item--list-link" to="https://demo.unlimitedweb.ir/Consua/new/contact/" title="">خط مشی</Link></li>
+                <li><Link className="subFooter-inner_item--list-link" to="https://demo.unlimitedweb.ir/Consua/new/contact/" title="">پشتیبانی</Link></li>
             </ul>
         </div>
       </div>

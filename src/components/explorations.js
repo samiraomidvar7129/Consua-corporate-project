@@ -1,26 +1,27 @@
-import "../index.css";
 import React from 'react';
+import "../index.css";
+import {Link} from 'react-router-dom'
 
 const Explorations = () => {
   return (
     <div className='explorations-wrapper'>
-         <h5>کاوش کنید</h5>
+         <h5 className='explorations-title'>کاوش کنید</h5>
         <div className="explorations-parent">
             <ul className='explorations-list'>
                 <li>
-                    <a href=''>   پروفایل شرکت</a>
+                    <Link to="https://demo.unlimitedweb.ir/Consua/new/contact/">   پروفایل شرکت</Link>
                 </li>
                 <li>
-                    <a href=''> آخرین پست </a>
+                    <Link to="https://demo.unlimitedweb.ir/Consua/new/contact/"> آخرین پست </Link>
                 </li>
                 <li>
-                    <a href=''>   پشتیبانی</a>
+                    <Link to="https://demo.unlimitedweb.ir/Consua/new/contact/">   پشتیبانی</Link>
                 </li>
                 <li>
-                    <a href=''>  قیمت گذاری</a>
+                    <Link to="https://demo.unlimitedweb.ir/Consua/new/contact/">  قیمت گذاری</Link>
                 </li>
                 <li>
-                    <a href=''>  تماس باما</a>
+                    <Link to="https://demo.unlimitedweb.ir/Consua/new/contact/">  تماس باما</Link>
                 </li>
             </ul>
         </div>

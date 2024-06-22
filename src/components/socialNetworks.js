@@ -4,8 +4,8 @@ import { GrLinkedinOption } from "react-icons/gr";
 import { RiTwitterLine } from "react-icons/ri";
 import { TiSocialFacebook } from "react-icons/ti";
 import { FaWhatsapp } from "react-icons/fa";
-import { CiYoutube } from "react-icons/ci";
 
+import { Link } from 'react-router-dom';
 
 
 
@@ -14,11 +14,10 @@ const SocialNetworks= () => {
 
       <div className='socialNetworks'>
         <ul>
-        <li><a href='#'><CiYoutube className='social-icon'/> </a></li>
-        <li><a href='#'><FaWhatsapp className='social-icon'/> </a></li>
-        <li><a href='https://www.linkedin.com/in/samira-omidvar-6038ab234'><GrLinkedinOption className='social-icon'/></a></li>
-        <li><a href='#'><RiTwitterLine className='social-icon'/>  </a></li>
-        <li><a href='#'><TiSocialFacebook className='social-icon'/> </a></li>
+        <li><Link to='#'><FaWhatsapp className='social-icon'/> </Link></li>
+        <li><Link to='https://www.linkedin.com/in/samira-omidvar-6038ab234'><GrLinkedinOption className='social-icon'/></Link></li>
+        <li><Link to='#'><RiTwitterLine className='social-icon'/>  </Link></li>
+        <li><Link to='#'><TiSocialFacebook className='social-icon'/> </Link></li>
       </ul>
       </div>
     
