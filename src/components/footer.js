@@ -25,6 +25,9 @@ const Footer = () => {
           <WorkTime/>
         </div>
       </div>
+      <span className="footer-shape">
+        <img src="images/Shape/times.png" alt="times-img"/>
+      </span>
     </section>
   );
 };

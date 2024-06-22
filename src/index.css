@@ -25,6 +25,7 @@
   text-decoration: none;
   list-style: none;
   font-family: "Yekan";
+  font-weight: normal;
 }
 html,
 body {
@@ -86,12 +87,12 @@ input::placeholder {
 .mySwiper-title {
   color: #010101 !important;
   text-align: right;
-  font-size: 30px;
+  font-size: 25px;
   margin: 150px auto 20px auto;
 }
 .mySwiper-txt {
   color: #010101 !important;
-  font-size: 14px;
+  font-size: 12px;
   text-align: right;
 }
 
@@ -115,7 +116,7 @@ input::placeholder {
 .counselingBtn-link {
   color: #ffff;
   text-align: center;
-  font-size: 15px;
+  font-size: 12px;
 }
 
 .routes {
@@ -174,7 +175,7 @@ input::placeholder {
 }
 .navbar-link {
   margin-left: 20px;
-  font-size: 13px;
+  font-size: 12px;
 }
 .navbar-link a {
   color: #010101;
@@ -209,13 +210,14 @@ input::placeholder {
   align-items: center;
   flex-direction: row-reverse;
   margin-left: 13px;
-  color: rgb(223, 10, 10);
+  color: rgb(223,10,10);
 }
 .user-icon {
-  color: rgb(223, 10, 10);
+    font-size: 14px;
+  color: rgb(223,10,10);
 }
 .phone-icon h6 {
-  font-size: 10px;
+  font-size: 12px;
   margin-right: 5px;
 }
 
@@ -240,9 +242,15 @@ input::placeholder {
   padding: 20px;
 }
 
-.solution-h2,
 .solution-text {
   margin-top: 15px;
+}
+.solution-h2{
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+.solution-text{
+    font-size: 12px;
 }
 .solution-boxRight {
   position: relative;
@@ -286,7 +294,7 @@ input::placeholder {
   width: 80%;
   margin: 10px auto;
   color: gray;
-  font-size: 13px;
+  font-size: 12px;
   text-align: right;
   line-height: 28px;
 }
@@ -439,27 +447,11 @@ input::placeholder {
   padding: 10px 0;
 }
 .banner-inner_itemLeft--icon {
-  /* position: relative; */
-  /* width: 50px; */
-  /* height: 50px; */
-  /* z-index: 99; */
   font-size: 30px;
   color: rgb(192, 51, 51);
 }
 
-/* .banner-inner_itemLeft--icon::after{
-    position: absolute;
-    right: 7px;
-    top: 0;
-    content: "";
-    height: 50px;
-    width: 50px;
-    background: url(../public/images/Icons/feature_icon.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: top left;
-    z-index: -1;
-} */
+
 
 /* Comments Component Styles */
 
@@ -540,6 +532,118 @@ cursor: pointer;
   width: 80%;
   height: 80%;
 }
+
+
+/* News Component Styles */
+
+.news-parent{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.news-title{
+    text-align: center;
+    margin: 30px auto;
+}
+.news-content{
+    display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.news-content_boxRight--imgBox{
+    width: 100%;
+    height: 480px;
+}
+.news-content_boxRight--imgBox a,
+.news-content_boxLeft--item a
+{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    position: relative;
+
+}
+
+.news-content_boxRight--imgBox a img,
+.news-content_boxLeft--item a img
+{
+    display:block;
+    width: 100%;
+    height: 100%;
+}
+
+
+.news-content_boxRight--imgBox-text,
+.news-content_boxLeft--item-text
+{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    background-color: #01010144;
+}
+.news-content_boxRight--imgBox-text h3{
+    position: absolute;
+    bottom:35px;
+    right: 40px;
+    z-index:11 ;
+    color: #ffff;
+}
+.news-content_boxLeft--item-text span,
+.news-content_boxRight--imgBox-text span{
+    position: absolute;
+    top:20px;
+    left: 20px;
+    z-index:11 ;
+    color: #ffff;
+    display: block;
+    width: 60px;
+    height: 22px;
+    font-size: 11px;
+    background-color: rgb(223,10,10);
+    text-align: center;
+    padding: 3px 0;
+    border-radius: 4px;
+}
+.news-content_boxLeft--item-text h4
+{
+    position: absolute;
+    bottom: 13px;
+    right: 40px;
+    z-index:11 ;
+    color: #ffff;
+}
+
+.news-content_boxRight,
+.news-content_boxLeft{
+    width: 50%;
+    height: 100%;
+    padding: 10px;
+}
+.news-content_boxLeft{
+    display: flex;
+    flex-direction: column;
+  justify-content: center;
+  align-items: center;  
+}
+
+.news-content_boxRight{
+    margin-bottom: 20px;
+}
+
+
+
+
+
+
+
 
 /* Projects Component Styles */
 
@@ -790,7 +894,32 @@ label {
   padding: 20px auto 20px auto;
   font-size: 11px;
   border-top: 1px solid silver;
+  position: relative;
 }
+.footer-shape{
+    position: absolute;
+    bottom: 20px;
+    left: 30px;
+    z-index: 11;
+    width: 20px;
+    height: 20px;
+    animation: timesRotate 4s linear infinite;
+}
+
+
+@keyframes timesRotate{
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+
+
+.footer-shape img{
+    width: 100%;
+    height: 100%;
+}
+
 .footer-content {
   width: 100%;
   height: 100%;
@@ -857,8 +986,10 @@ label {
   color: rgb(179, 180, 183);
 }
 .workTime-logoBox {
-  width: 100%;
-  height: 60px;
+    display: block;
+  width: 70% ;
+  height: 30px ;
+  margin: 0 auto;
 }
 .workTime-logoBox img {
   display: block;
@@ -1058,6 +1189,40 @@ label {
     width: 50%;
     height: 100%;
   }
+
+  /* news */
+
+ 
+  .news-content{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+.news-content_boxRight,
+.news-content_boxLeft,
+.news-content_boxRight--imgBox,
+.news-content_boxLeft--imgBox
+{
+width: 100%;
+height: 100%;
+}
+
+.news-content_boxLeft--item-text h4
+{
+    position: absolute;
+    bottom: 20px;
+    right: 40px;
+    z-index:14px ;
+    font-size: 11px;
+    color: #ffff;
+}
+.workTime-logoBox {
+    display: block;
+  width: 30% ;
+  height: 30px ;
+  margin: 20px auto;
+}
 }
 
 /* 768 */
@@ -1132,6 +1297,35 @@ label {
     width: 50%;
     height: 100%;
   }
+
+  /* news */
+
+  .news-content{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+.news-content_boxRight,
+.news-content_boxLeft,
+.news-content_boxRight--imgBox,
+.news-content_boxLeft--imgBox
+{
+width: 100%;
+height: 100%;
+}
+
+  .news-content_boxLeft--item-text h4
+{
+    position: absolute;
+    bottom: 20px;
+    right: 40px;
+    z-index:14px ;
+    font-size: 11px;
+    color: #ffff;
+}
+
+
 
   /* solution */
   .solution-wrapper {
@@ -1221,4 +1415,10 @@ label {
     width: 100%;
     padding: 5px;
   }
+  .workTime-logoBox {
+    display: block;
+  width: 20%  ;
+  height: 30px  ;
+  margin: 20px auto;
+}
 }

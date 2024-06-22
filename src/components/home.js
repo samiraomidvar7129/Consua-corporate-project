@@ -16,7 +16,8 @@ import Solutions from "./solutions";
 import CounselingBtn from "./counselingBtn";
 import Services from './services';
 import Banner from "./banner";
-import Comments from './comments'
+import Comments from './comments';
+import News from "./news";
 
 
 const Home = () => {
@@ -81,7 +82,7 @@ const Home = () => {
       <Services/>
       <Banner/>
       <Comments/>
-
+      <News/>
     </>
   );
 };
