@@ -5,11 +5,11 @@ import { Provider } from 'react-redux';
 import {Routes,Route} from 'react-router-dom';
 import Home from './components/home';
 import Navbar from './components/navbar';
-import Services from './components/services';
 import AboutUs from './components/aboutUs';
 import Projects from './components/projects';
 import ContactUs from './components/contactUs';
-import Footer from './components/footer'
+import Footer from './components/footer';
+import SubFooter from './components/subFooter';
 import Login from './components/login';
 
 
@@ -21,7 +21,6 @@ return (
         <section className='routes'>
         <Routes>
         <Route path="/home"  element={ <Home/>}></Route>
-        <Route path="/services"  element={<Services/>}></Route>
         <Route path="/projects"  element={<Projects/>}></Route>
         <Route path="/about-us"  element={<AboutUs/>}  ></Route>
         <Route path="/contact-us"  element={<ContactUs/>}  ></Route>
@@ -30,6 +29,7 @@ return (
         </Routes>
         </section> 
         <Footer/>
+        <SubFooter/>
      </Provider>
 
      

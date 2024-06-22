@@ -14,6 +14,8 @@ import { Autoplay } from "swiper/modules";
 
 import Solutions from "./solutions";
 import CounselingBtn from "./counselingBtn";
+import Services from './services';
+
 
 const Home = () => {
   return (
@@ -74,6 +76,8 @@ const Home = () => {
       </section>
 
       <Solutions />
+      <Services/>
+
     </>
   );
 };

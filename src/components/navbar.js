@@ -36,7 +36,7 @@ const Navbar =()=>{
      
        <ul className={active}>
         <li className='navbar-link'><Link to='/'>صفحه اصلی</Link></li>
-        <li className='navbar-link'><Link to='services'> خدمات</Link></li>
+        {/* <li className='navbar-link'><Link to='services'> خدمات</Link></li> */}
         <li className='navbar-link'><Link to='projects'> پروژه ها</Link></li>
         <li className='navbar-link'><Link to='about-us'>درباره ما </Link></li>
         <li className='navbar-link'><Link to='contact-us'> ارتباط باما</Link></li>
