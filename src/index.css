@@ -96,11 +96,11 @@ input::placeholder {
 
 /* CounselingBtn Component Styles */
 
-.CounselingBtn-parent{
+.counselingBtn-parent{
     margin-top: 30px;
 }
 
-.CounselingBtn{
+.counselingBtn{
     display: block;
     width: 150px;
     height: 50px;
@@ -112,7 +112,7 @@ input::placeholder {
   padding: 5px 10px;
   
 }
-.CounselingBtn-link{
+.counselingBtn-link{
     color: #ffff;
     text-align: center;
     font-size: 15px;
@@ -367,6 +367,109 @@ input::placeholder {
   line-height: 20px;
   padding: 10px;
 }
+
+
+/* Banner Component Styles */
+
+.banner-parent{
+    width: 100%;
+    height: 400px;
+    margin: 20px auto;
+}
+.banner-inner{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.banner-inner_itemRight,.banner-inner_itemLeft{
+    width: 50%;
+    height: 100%;
+    padding:10px 20px;
+}
+.banner-inner_itemRight--imgBox{
+    width: 80%;
+    height: 100%;
+    margin: auto;
+    position: relative;
+}
+.banner-inner_itemRight--imgBox img{
+    width: 100%;
+    height: 100%;
+    display: block;
+    border-radius: 10px;
+}
+.banner-inner_itemRight--imgBox::after{
+content: "۱۵ سال سابقه";
+position: absolute;
+bottom: 20px;
+right: -20px;
+z-index: 9999;
+width: 100px;
+height: 100px;
+background-color: rgb(192, 51, 51);
+display: flex;
+justify-content: center;
+align-items: center;
+text-align: center;
+color:transparent;
+border-radius: 10px;
+font-size: 30px;
+-webkit-text-stroke: 1px #ffff;
+
+}
+
+.banner-inner_itemLeft--items{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: right;
+    padding: 20px 0;
+}
+.banner-inner_itemLeft--items-boxRight,
+.banner-inner_itemLeft--items-boxLeft{
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: right;
+}
+.banner-inner_itemLeft--title,
+.banner-inner_itemLeft--txt{
+    padding: 10px 0;
+}
+.banner-inner_itemLeft--icon{
+    /* position: relative; */
+    /* width: 50px; */
+    /* height: 50px; */
+    /* z-index: 99; */
+    font-size: 30px ;
+    color:rgb(192, 51, 51);
+}
+
+
+
+
+
+/* .banner-inner_itemLeft--icon::after{
+    position: absolute;
+    right: 7px;
+    top: 0;
+    content: "";
+    height: 50px;
+    width: 50px;
+    background: url(../public/images/Icons/feature_icon.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: top left;
+    z-index: -1;
+} */
+
+
 
 /* Projects Component Styles */
 
@@ -985,16 +1088,42 @@ label {
     transform: translateX(0);
   }
 
+  /* banner */
+.banner-parent{
+    width: 100%;
+    height: 100%;
+margin-top: 50px;
+}
+  .banner-inner{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .banner-inner_itemRight,
+ .banner-inner_itemLeft{
+    width: 100%;
+    height: 100%;
+    margin-top: 20px;
+ }
+
   /* solution */
   .solution-wrapper {
     width: 100%;
-    height: auto;
+    height: 100%;
     background-color: transparent;
     padding: 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    font-size: 11px;
+  }
+  .solution-boxRight,
+  .solution-boxLeft{
+    width: 100%;
+    height: 100%;
+    margin-top: 20px;
   }
   .solution-content,
   .solution-imgBox {

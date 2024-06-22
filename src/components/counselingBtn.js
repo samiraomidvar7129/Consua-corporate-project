@@ -1,13 +1,13 @@
 import React from 'react';
-import "../index.css";
-
+import {Link} from 'react-router-dom'
 
 const CounselingBtn = () => {
   return (
-    <div className='CounselingBtn-parent'>
-      <span className='CounselingBtn'>
-        <a href='' className='CounselingBtn-link'>دریافت مشاوره</a>
-      </span>
+    <div className='counselingBtn-parent'>
+        <div className='counselingBtn'>
+            <Link to="https://demo.unlimitedweb.ir/Consua/new/about-us/" className='counselingBtn-link'>دریافت مشاوره</Link>
+        </div>
+      
     </div>
   )
 }

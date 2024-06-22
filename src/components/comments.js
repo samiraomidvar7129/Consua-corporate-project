@@ -5,12 +5,11 @@ import { Swiper, SwiperSlide } from "swiper/react";
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
-import "swiper/css/navigation";
 
 // import './styles.css';
 
 // import required modules
-import { Autoplay } from "swiper/modules";
+import { Autoplay, Pagination } from "swiper/modules";
 
 const Comments = () => {
   return (
@@ -20,15 +19,16 @@ const Comments = () => {
       </div>
       <section className="comments-slider">
       <Swiper
-          slidesPerView={1}
+          slidesPerView={3}
           spaceBetween={30}
           loop={true}
+          pagination={true}
           autoplay={{
             delay: 2500,
             disableOnInteraction: false,
           }}
           
-          modules={[Autoplay]}
+          modules={[Autoplay,Pagination]}
           className="mySwiper"
         >
           <SwiperSlide className="swiperSlide">
@@ -38,7 +38,6 @@ const Comments = () => {
               استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله
               در ستون و سطرآنچنان که لازم است
             </p>
-            <CounselingBtn />
           </SwiperSlide>
           <SwiperSlide className="swiperSlide">
             <h1 className="mySwiper-title">تجزیه و تحلیل مالی برای توسعه</h1>
@@ -47,7 +46,6 @@ const Comments = () => {
               استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله
               در ستون و سطرآنچنان که لازم است
             </p>
-            <CounselingBtn />
           </SwiperSlide>
           <SwiperSlide className="swiperSlide">
             <h1 className="mySwiper-title">تجزیه و تحلیل مالی برای توسعه</h1>
@@ -56,7 +54,6 @@ const Comments = () => {
               استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله
               در ستون و سطرآنچنان که لازم است
             </p>
-            <CounselingBtn />
           </SwiperSlide>
         </Swiper>
       </section>

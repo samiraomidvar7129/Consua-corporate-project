@@ -15,6 +15,8 @@ import { Autoplay } from "swiper/modules";
 import Solutions from "./solutions";
 import CounselingBtn from "./counselingBtn";
 import Services from './services';
+import Banner from "./banner";
+import Comments from './comments'
 
 
 const Home = () => {
@@ -77,6 +79,8 @@ const Home = () => {
 
       <Solutions />
       <Services/>
+      <Banner/>
+      <Comments/>
 
     </>
   );
