@@ -3,6 +3,7 @@ import "../index.css";
 import { useFormik } from "formik";
 import * as Yup from "yup";
 import ContactBanner from "./contactBanner";
+import Map from "./map";
 import { IoIosPhonePortrait } from "react-icons/io";
 import { TiLocationOutline } from "react-icons/ti";
 import { MdOutlineMarkEmailUnread } from "react-icons/md";
@@ -133,6 +134,8 @@ const ContactUs = () => {
           </div>
         </div>
       </section>
+
+       <Map/>
     </>
   );
 };

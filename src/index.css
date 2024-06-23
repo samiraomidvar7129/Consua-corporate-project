@@ -125,6 +125,7 @@ input::placeholder {
   height: auto;
 }
 
+
 /* Navbar Component Styles */
 
 .navbar-wrapper {
@@ -132,6 +133,7 @@ input::placeholder {
   height: 10vh;
   margin: 0 auto;
   background: #ffff;
+  border-bottom: 1px solid rgba(192, 192, 192, 0.498);
   padding: 10px;
   border-radius: 3px;
   display: flex;
@@ -162,7 +164,7 @@ input::placeholder {
   width: 30px;
   height: 2px;
   margin: 5px;
-  background-color: #ffff;
+  background-color: #010101;
   transition: 0.4s ease-in;
 }
 .navbar-toggler {
@@ -669,10 +671,6 @@ cursor: pointer;
 
 
 
-
-
-
-
 /* Projects Component Styles */
 
 .projects-wrapper {
@@ -842,7 +840,6 @@ cursor: pointer;
 .contactUs-detailes_item p{
     display: flex;
     flex-direction: column;
-    /* justify-content: space-around; */
     align-items: center;
     margin-right: 10px;
 }
@@ -969,6 +966,25 @@ label {
   text-align: right;
   border-radius: 5px;
 }
+
+/* Map Component Styles */
+
+.map-parent{
+    width: 100%;
+    height: 300px;
+    padding: 20px;
+    margin-top: 10px;
+}
+.leaflet-container {
+    width: 100%;
+    height: 100%;
+  }
+  .map-parent_title{
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+  }
+
 
 
 /* ContactBanner Component Styles */
@@ -1309,12 +1325,12 @@ label {
   color: rgb(223, 10, 10);
   font-size: 11px;
   padding-top: 6px;
-  /* text-align: right !important; */
 }
 
 /* 530 */
 
 @media (300px <= width <= 530px) {
+
   /* contact Us */
 
   #textarea {
@@ -1363,6 +1379,7 @@ height: 100%;
 }
 
 /* contactUs */
+
 .contactUs-parent{
     display: flex;
     flex-direction: column;
@@ -1415,6 +1432,7 @@ height: 100%;
 /* 768 */
 
 @media (300px <= width <= 768px) {
+
   .navbar-wrapper {
     width: 100%;
   }
@@ -1431,7 +1449,7 @@ height: 100%;
   .navbar-toggler {
     cursor: pointer;
     display: flex;
-    background-color: rgb(223, 10, 10);
+     margin-right: 20px;
   }
   .navbar-menu {
     position: fixed;
@@ -1439,7 +1457,9 @@ height: 100%;
     right: 0;
     width: 30%;
     height: 93vh;
-    background: rgb(223, 10, 10);
+    background: #ffff;
+    border-left: 1px solid silver;
+    border-top: 1px solid silver;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -1447,13 +1467,19 @@ height: 100%;
     transition: 0.5s ease-in;
   }
   .navbar-menu li {
-    margin-top: 20px;
-    font-size: 18px;
+    display: inline-block;
+    width: 100%;
+    height: 30px;
+    text-align: center;
+    margin-bottom: 22px;
+    font-size: 16px;
+    padding: 10px;
   }
   .navbar-menu li a {
-    color: #ffff;
+    color: #010101;
   }
-  /* navbar actove class */
+
+  /* navbar active class */
 
   .nav-active {
     transform: translateX(0);
@@ -1539,6 +1565,7 @@ height: 100%;
   }
 
   /* about Us */
+
 .aboutUs-wrapper{
     display: flex;
     flex-direction: column;
@@ -1570,6 +1597,7 @@ height: 100%;
   }
 
   /* contact Us */
+
 .contactUs-parent{
 display: flex;
 flex-direction: column;
@@ -1599,6 +1627,7 @@ align-items: center;
   }
 
   /* footer */
+
   .footer {
     height: auto;
   }
@@ -1607,8 +1636,8 @@ align-items: center;
     height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-end;
+    align-items: start;
     padding: 20px;
   }
   .footer-item {
