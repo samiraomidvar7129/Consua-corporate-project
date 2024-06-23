@@ -975,8 +975,7 @@ label {
 .map-parent{
     width: 100%;
     height: 300px;
-    padding: 20px;
-    margin: 20px auto;
+    margin: 20px auto 50px auto;
 }
 .leaflet-container {
     width: 100%;
