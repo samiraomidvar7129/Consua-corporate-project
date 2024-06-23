@@ -213,9 +213,10 @@ input::placeholder {
   flex-direction: row-reverse;
   margin-left: 13px;
   color: rgb(223,10,10);
+  font-size: 20px;
 }
 .user-icon {
-    font-size: 14px;
+    font-size: 20px;
   color: rgb(223,10,10);
 }
 .phone-icon h6 {
@@ -347,7 +348,6 @@ input::placeholder {
   padding: 20px;
   text-align: center;
 }
-
 .services-cards-item {
   width: 100%;
   height: auto;
@@ -357,7 +357,7 @@ input::placeholder {
   justify-content: space-around;
   align-items: center;
   padding: 10px;
-  margin-top: 30px;
+  margin-top: 40px;
 }
 .card-item {
   display: flex;
@@ -496,6 +496,7 @@ input::placeholder {
 .comments-title {
   color: #ffff;
   margin-top: 10px;
+  font-size: 16px;
 }
 .comments-slider {
   width: 100%;
@@ -573,6 +574,7 @@ cursor: pointer;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-top: 50px;
 }
 .news-title{
     text-align: center;
@@ -684,6 +686,7 @@ cursor: pointer;
   text-align: center;
   padding: 20px;
   color: #ffff;
+  margin-top: 50px;
 }
 .projects-title {
   color: #010101;
@@ -973,7 +976,7 @@ label {
     width: 100%;
     height: 300px;
     padding: 20px;
-    margin-top: 10px;
+    margin: 20px auto;
 }
 .leaflet-container {
     width: 100%;
@@ -992,6 +995,7 @@ label {
 .contactBanner-parent{
     width: 100%;
     height: 200px;
+    margin: 50px auto 0 auto;
 }
 .contactBanner-inner{
     width: 100%;
@@ -1118,6 +1122,7 @@ label {
   line-height: 25px;
   margin: 30px auto;
   color: rgb(210, 210, 212);
+  font-size: 11px;
 }
 .footer-logo {
   width: 60px;
@@ -1152,6 +1157,7 @@ label {
 }
 .workTime-txt {
   padding-top: 30px;
+  font-size: 11px;
 }
 .workTime-content {
   padding-top: 40px;
@@ -1226,11 +1232,12 @@ label {
 }
 .links-list li a,
 .explorations-list li a {
+  font-size: 11px;
   color: rgb(192, 193, 195);
 }
 .links-list li:hover a,
 .explorations-list li:hover a {
-  color: #5f81b6;
+  color: rgb(192, 51, 51);
 }
 
 /* SubFooter Component Styles */
@@ -1269,7 +1276,7 @@ label {
 .loginForm {
   width: 50%;
   height: auto;
-  margin: 10px auto;
+  margin: 100px auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -1277,6 +1284,9 @@ label {
   border: 1px solid silver;
   border-radius: 6px;
   padding: 10px 0;
+}
+.loginForm-title{
+  font-size: 20px;
 }
 .loginForm-item {
   width: 100%;
@@ -1290,7 +1300,7 @@ label {
 }
 .filed-input {
   width: 100%;
-  margin-top: 10px;
+  margin: 15px 0;
   padding: 10px;
   border-radius: 5px;
   outline: none;
@@ -1312,7 +1322,7 @@ label {
   margin: 20px auto 0 auto;
   width: 200px;
   height: 40px;
-  background-color: rgb(10, 157, 10);
+  background-color: rgb(192, 51, 51);
   color: #fff;
   text-align: center;
   padding: 7px;
@@ -1320,9 +1330,10 @@ label {
   outline: none;
   border: none;
   cursor: pointer;
+  font-size: 12px;
 }
 .errorMessage {
-  color: rgb(223, 10, 10);
+  color: rgb(192, 51, 51);
   font-size: 11px;
   padding-top: 6px;
 }
@@ -1636,16 +1647,18 @@ align-items: center;
     height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
-    align-items: start;
+    justify-content: center;
+    align-items: center;
     padding: 20px;
   }
   .footer-item {
+
     width: 100%;
     margin-top: 15px;
     border-bottom: 1px solid silver;
     padding-bottom: 20px;
   }
+
   .links-list li,
   .explorations-list li {
     display: inline-block;
@@ -1658,4 +1671,14 @@ align-items: center;
   height: 30px  ;
   margin: 20px auto;
 }
+
+.socialNetworks ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.socialNetworks ul li{
+  margin-left: 10px;
+}
+
 }

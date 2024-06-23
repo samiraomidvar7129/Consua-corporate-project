@@ -11,7 +11,7 @@ const Services = () => {
   return (
     <section className="services-wrapper">
       <div className="services-title">
-        <h1 className="services-text">خدماتی که ماارائه می دهیم</h1>
+        <h4 className="services-text">خدماتی که ماارائه می دهیم</h4>
 
       </div>
       <div className="services-cards-item">

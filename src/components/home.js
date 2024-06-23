@@ -7,10 +7,12 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 
-// import './styles.css';
 
 // import required modules
+
 import { Autoplay } from "swiper/modules";
+
+// Components--------------------------------------------->
 
 import Solutions from "./solutions";
 import CounselingBtn from "./counselingBtn";
@@ -18,6 +20,7 @@ import Services from './services';
 import Banner from "./banner";
 import Comments from './comments';
 import News from "./news";
+
 
 
 const Home = () => {
@@ -83,6 +86,7 @@ const Home = () => {
       <Banner/>
       <Comments/>
       <News/>
+
     </>
   );
 };

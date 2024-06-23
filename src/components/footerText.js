@@ -9,7 +9,6 @@ const FooterText = () => {
        
        <h2 className='footer-item_title'> خبرنامه</h2>
 
-        
           <p className="footer-item-p">
           در شرکت راه حل فناوری اطلاعات ما متعهد به ارائه خدمات و پشتیبانی  استثنائی به مشتریان خود هستیم 
           </p>
