@@ -6,7 +6,6 @@ const AboutUs = () => {
     <section className="aboutUs-wrapper">
       <div className="aboutUs-title">
         <h2 className="aboutUs-title-text">درباره شرکت</h2>
-       
       </div>
       <div className="aboutUs-content">
         <div className="aboutUs-text">

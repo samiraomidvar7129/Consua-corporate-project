@@ -94,6 +94,7 @@ input::placeholder {
   color: #010101 !important;
   font-size: 12px;
   text-align: right;
+  line-height: 28px;
 }
 
 /* CounselingBtn Component Styles */
@@ -150,7 +151,6 @@ input::placeholder {
   justify-content: flex-end;
   align-items: center;
   margin-right: 30px;
-  background-color: green;
 }
 .navbar-menu {
   display: flex;
@@ -244,14 +244,15 @@ input::placeholder {
 
 .solution-text {
   margin-top: 15px;
+  line-height: 30px;
+  text-align: justify;
+  font-size: 12px;
 }
 .solution-h2{
     margin-bottom: 15px;
-    font-size: 20px;
+    font-size: 18px;
 }
-.solution-text{
-    font-size: 12px;
-}
+
 .solution-boxRight {
   position: relative;
   width: 50%;
@@ -275,7 +276,7 @@ input::placeholder {
   height: 50px;
 }
 .solution-boxRight_title {
-  font-size: 20px;
+  font-size: 18px;
   padding-top: 40px;
   word-wrap: break-word;
 }
@@ -295,7 +296,7 @@ input::placeholder {
   margin: 10px auto;
   color: gray;
   font-size: 12px;
-  text-align: right;
+  text-align: justify;
   line-height: 28px;
 }
 .solution-boxRight_counter {
@@ -306,11 +307,29 @@ input::placeholder {
   align-items: center;
 }
 .solution-counter_items {
+    width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   margin-top: 10px;
+}
+.solution-counter_item{
+    width: 45px;
+    height: 45px;
+    margin-bottom: 30px;
+    background: url(../public/images/Icons/feature_icon.png) no-repeat;
+    background-size: contain;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 13px;
+    padding:0 0 10px 10px;
+}
+.solution-counter_txt{
+    font-size: 12px;
+    padding-bottom: 30px;
 }
 
 /* Services Component Styles */
@@ -421,7 +440,7 @@ input::placeholder {
   color: transparent;
   border-radius: 10px;
   font-size: 30px;
-  -webkit-text-stroke: 1px #ffff;
+  -webkit-text-stroke:0.4px #ffff;
 }
 
 .banner-inner_itemLeft--items {
@@ -446,11 +465,20 @@ input::placeholder {
 .banner-inner_itemLeft--txt {
   padding: 10px 0;
 }
+.banner-inner_itemLeft--title{
+    font-size: 20px;
+}
+.banner-inner_itemLeft--txt{
+    font-size: 12px;
+    line-height: 28px;
+}
 .banner-inner_itemLeft--icon {
   font-size: 30px;
   color: rgb(192, 51, 51);
 }
-
+.banner-inner_itemLeft--text-h5{
+    font-size: 12px;
+}
 
 
 /* Comments Component Styles */
@@ -740,11 +768,12 @@ cursor: pointer;
   width: 50%;
   height: 100%;
   padding: 0 15px;
+  margin-bottom: 50px;
 }
 .aboutUs-text p {
   line-height: 30px;
   font-size: 12px;
-  text-align: right;
+  text-align: justify;
 }
 .aboutUs-imgBox {
   width: 50%;
@@ -758,25 +787,100 @@ cursor: pointer;
 
 /* ContactUs Component Styles */
 
+.contactUs-parent{
+    width: 100%;
+    height: 100%;
+    display: flex;
+  justify-content: center;
+  align-items: center;
+ 
+}
+.contactUs-parent_innerItem{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contactUs-parent_innerItem--title{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 60px;
+    padding:0 20px;
+}
+
+.contactUs-parent_innerItem--title p{
+    margin-top: 15px;
+    font-size: 12px;
+    text-align: justify;
+}
+
+.contactUs-detailesـparent{
+    width: 100%;
+    height: 100%;
+}
+.contactUs-detailes_inner{
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-end;
+    align-items: start;
+}
+
+.contactUs-detailes_item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: right;
+    margin-top: 30px;
+}
+
+.contactUs-detailes_item p{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-around; */
+    align-items: center;
+    margin-right: 10px;
+}
+
+.contactUs-detailes_item p span{
+    font-size: 12px;
+    padding-top: 10px;
+    text-align: right !important;
+}
+
+.contactUs-detailes_item > span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    text-align: center;
+    background-color: rgb(223,10,10);
+    font-size: 20px;
+    color: #ffff;
+}
+
 .contactUs-title,
 .login-title {
   text-align: center;
   margin: 20px auto;
 }
-.contactUs-wrapper {
+.contactUs-form {
   width: 100%;
   height: 100%;
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
-.form-imgBox {
-  width: 50%;
-  height: 480px;
-  padding: 20px;
-}
+
 .form-item {
-  width: 50%;
+  width: 100%;
   height: 100%;
   padding: 20px;
 }
@@ -830,7 +934,7 @@ label {
 .submit-btn {
   width: 200px;
   height: 40px;
-  background-color: rgb(10, 157, 10);
+  background-color: rgb(223,10,10);
   color: #fff;
   text-align: center;
   padding: 7px;
@@ -839,7 +943,20 @@ label {
   border: none;
   cursor: pointer;
   margin-bottom: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
 }
+
+.submit-btn span{
+    font-size: 20px;
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 10px;
+}
+
 #textarea {
   width: 385px;
   height: 150px;
@@ -852,6 +969,27 @@ label {
   text-align: right;
   border-radius: 5px;
 }
+
+
+/* ContactBanner Component Styles */
+
+.contactBanner-parent{
+    width: 100%;
+    height: 200px;
+}
+.contactBanner-inner{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.contactBanner-inner h2{
+    position: absolute;
+    top: 50%;
+    left: 35%;
+    transform: translate(-50%,-35%);
+}
+
+
 
 /* Partners Component Styles */
 
@@ -1223,6 +1361,55 @@ height: 100%;
   height: 30px ;
   margin: 20px auto;
 }
+
+/* contactUs */
+.contactUs-parent{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    }
+    .contactUs-parent_innerItem {
+        width: 100%;
+        height: 100%;
+    }
+    .contactUs-detailesـparent{
+        margin:0 20px 40px 0;
+    }
+
+    /* aboutUs */
+
+    .aboutUs-wrapper{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; 
+    }
+      .aboutUs-content {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 50px;
+      }
+      .aboutUs-text  {
+        width: 100%;
+        height: 100%;
+      }
+      .aboutUs-text p {
+        width: 100%;
+        height: 100%;
+        line-height: 30px;
+        font-size: 12px;
+        text-align: justify;
+      }
+      .aboutUs-imgBox {
+        display: none;
+      }
+
+
 }
 
 /* 768 */
@@ -1326,8 +1513,8 @@ height: 100%;
 }
 
 
-
   /* solution */
+
   .solution-wrapper {
     width: 100%;
     height: 100%;
@@ -1352,26 +1539,51 @@ height: 100%;
   }
 
   /* about Us */
-  .aboutUs-content {
-    height: auto;
+.aboutUs-wrapper{
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+}
+  .aboutUs-content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
   }
-  .aboutUs-text p {
-    line-height: 30px;
-    font-size: 12px;
-    text-align: justify;
-    padding-top: 20px;
-  }
-  .aboutUs-imgBox {
+  .aboutUs-text  {
     width: 100%;
     height: 100%;
   }
+  .aboutUs-text p {
+    width: 100%;
+    height: 100%;
+    line-height: 30px;
+    font-size: 12px;
+    text-align: justify;
+  }
+  .aboutUs-imgBox {
+    display: none;
+  }
 
   /* contact Us */
+.contactUs-parent{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+.contactUs-parent_innerItem {
+    width: 100%;
+    height: 100%;
+}
+.contactUs-detailesـparent{
+    margin:0 20px 40px 0;
+}
+
   .form-imgBox {
     display: none;
   }
@@ -1379,11 +1591,7 @@ height: 100%;
     width: 80%;
     margin: 0 auto;
   }
-  /* #textarea{
-        width: 200px;
-        background-color: red;
-    } */
-
+ 
   /* login */
 
   .register-btn {
