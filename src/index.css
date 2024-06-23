@@ -751,7 +751,7 @@ cursor: pointer;
   align-items: center;
   text-align: center;
   padding: 20px;
-  margin-top: 50px;
+  margin-top: 60px;
   overflow: hidden;
   background: url("../public/images/AboutUs-img/back.png") no-repeat;
   background-size: cover;
@@ -763,7 +763,7 @@ cursor: pointer;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 100px;
+  margin-top: 50px;
 }
 .aboutUs-text {
   width: 50%;

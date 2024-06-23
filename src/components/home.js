@@ -32,7 +32,7 @@ const Home = () => {
           spaceBetween={30}
           loop={true}
           autoplay={{
-            delay: 2800,
+            delay: 3800,
             disableOnInteraction: false,
           }}
           

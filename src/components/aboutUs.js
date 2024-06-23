@@ -5,7 +5,7 @@ const AboutUs = () => {
   return (
     <section className="aboutUs-wrapper">
       <div className="aboutUs-title">
-        <h2 className="aboutUs-title-text">درباره شرکت</h2>
+        <h3 className="aboutUs-title-text">درباره شرکت</h3>
       </div>
       <div className="aboutUs-content">
         <div className="aboutUs-text">
