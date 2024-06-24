@@ -14,10 +14,11 @@ const SocialNetworks= () => {
 
       <div className='socialNetworks'>
         <ul>
-        <li><Link to='#'><FaWhatsapp className='social-icon'/> </Link></li>
-        <li><Link to='https://www.linkedin.com/in/samira-omidvar-6038ab234'><GrLinkedinOption className='social-icon'/></Link></li>
-        <li><Link to='#'><RiTwitterLine className='social-icon'/>  </Link></li>
-        <li><Link to='#'><TiSocialFacebook className='social-icon'/> </Link></li>
+        <li><Link to='#' title='whatsapp'><FaWhatsapp className='social-icon'/> </Link></li>
+        <li><Link to='https://www.linkedin.com/in/samira-omidvar-6038ab234' title='linkedin'>
+        <GrLinkedinOption className='social-icon'/></Link></li>
+        <li><Link to='#' title='twitter'><RiTwitterLine className='social-icon'/>  </Link></li>
+        <li><Link to='#' title='facebook'><TiSocialFacebook className='social-icon'/> </Link></li>
       </ul>
       </div>
     

@@ -5,7 +5,7 @@ const CounselingBtn = () => {
   return (
     <div className='counselingBtn-parent'>
         <div className='counselingBtn'>
-            <Link to="https://demo.unlimitedweb.ir/Consua/new/about-us/" className='counselingBtn-link'>دریافت مشاوره</Link>
+            <Link title='دریافت مشاوره' to="https://demo.unlimitedweb.ir/Consua/new/about-us/" className='counselingBtn-link'>دریافت مشاوره</Link>
         </div>
       
     </div>

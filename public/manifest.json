@@ -1,19 +1,19 @@
 {
-  "short_name": "آریا گستر ",
-  "name": "  آریا گستر را رای گوشی خود نصب کنید ",
+  "short_name": " Consua ",
+  "name": "   کانسوا را رای گوشی خود نصب کنید ",
   "icons": [
     {
-      "src": "logo.jpeg",
+      "src": "logo.png",
       "sizes": "64x64 32x32 24x24 16x16",
       "type": "image/x-icon"
     },
     {
-      "src": "logo192.jpeg",
+      "src": "logo192.png",
       "type": "image/png",
       "sizes": "192x192"
     },
     {
-      "src": "logo512.jpeg",
+      "src": "logo512.png",
       "type": "image/png",
       "sizes": "512x512"
     }

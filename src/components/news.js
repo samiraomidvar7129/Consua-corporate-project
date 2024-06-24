@@ -10,7 +10,7 @@ const News = () => {
       <div className="news-content">
         <div className="news-content_boxRight">
           <div className="news-content_boxRight--imgBox">
-            <Link to="https://demo.unlimitedweb.ir/Consua/new/1402/06/18/breeding-point-concerns-has-terminate-the-hole/">
+            <Link title=" ثبت شرکت های خصوصی" to="https://demo.unlimitedweb.ir/Consua/new/1402/06/18/breeding-point-concerns-has-terminate-the-hole/">
               <img
                 className="news-content_boxRight--img"
                 src="images/NewsImgs/news1.jpg"
@@ -26,7 +26,7 @@ const News = () => {
         <div className="news-content_boxLeft">
           <div className="news-content_boxLeft--imgBox">
             <div className="news-content_boxLeft--item">
-              <Link to="https://demo.unlimitedweb.ir/Consua/new/1402/06/18/clothes-but-observe-country-at-the-maintaining/">
+              <Link title="اقدامات پس از ثبت شرکت " to="https://demo.unlimitedweb.ir/Consua/new/1402/06/18/clothes-but-observe-country-at-the-maintaining/">
                 <img
                   className="news-content_boxLeft--item_img"
                   src="images/NewsImgs/news2.jpg"
@@ -39,7 +39,7 @@ const News = () => {
               </Link>
             </div>
             <div className="news-content_boxLeft--item">
-              <Link to="https://demo.unlimitedweb.ir/Consua/new/1402/06/18/minuter-him-own-clothes-but-observe-country/">
+              <Link title=">تعداد اعضای شرکت سهامی خاص" to="https://demo.unlimitedweb.ir/Consua/new/1402/06/18/minuter-him-own-clothes-but-observe-country/">
                 <img
                   className="news-content_boxLeft--item_img"
                   src="images/NewsImgs/news3.jpg"

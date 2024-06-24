@@ -14,6 +14,7 @@ const Banner = () => {
             <img
               src="images/Banner/banner.jpg"
               className="banner-inner_itemRight--img"
+              alt="banner-img"
             />
           </div>
         </div>
