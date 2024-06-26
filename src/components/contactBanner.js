@@ -1,10 +1,14 @@
-import React from 'react'
+import React from 'react';
+
+// import react-lazy-load-------------------------------->
+
+import {LazyLoadImage} from 'react-lazy-load-image-component';
 
 const ContactBanner = () => {
   return (
     <div className='contactBanner-parent'> 
     <div className='contactBanner-inner'>
-        <img src='images/ContactUs-img/contact-us.jpg'  alt='contact-img'/>
+        <LazyLoadImage src='images/ContactUs-img/contact-us.jpg' loading='lazy'  alt='contact-img'/>
         <h2>تماس با ما</h2>
     </div>
       

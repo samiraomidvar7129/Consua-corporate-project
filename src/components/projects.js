@@ -2,6 +2,10 @@ import React,{useEffect} from 'react';
 import '../index.css';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
+// import react-lazy-load-------------------------------->
+
+import {LazyLoadImage} from 'react-lazy-load-image-component';
+
 // Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/grid';
@@ -65,7 +69,7 @@ const Project=({loading,projects,errorMessage,fetchProjects})=>{
             projects.map(project=>{
              return(
                 <SwiperSlide className='mySwiper-content' key={project.id}>
-                    <div><img src={project.img} alt={project.title}/></div>
+                    <div><LazyLoadImage src={project.img} alt={project.title} loading='lazy'/></div>
                     <h5>{project.title}</h5>
                     <h6>{project.description}</h6>
                 </SwiperSlide>

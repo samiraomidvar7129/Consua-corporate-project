@@ -1,6 +1,10 @@
 import React from "react";
 import "../index.css";
 
+// import react-lazy-load-------------------------------->
+
+import {LazyLoadImage} from 'react-lazy-load-image-component';
+
 const AboutUs = () => {
   return (
     <section className="aboutUs-wrapper">
@@ -18,7 +22,7 @@ const AboutUs = () => {
           </p>
         </div>
         <div className="aboutUs-imgBox">
-          <img src="images/AboutUs-img/about.png" alt="aboutUs-img" />
+          <LazyLoadImage src="images/AboutUs-img/about.png" alt="aboutUs-img" loading="lazy"/>
         </div>
       </div>
     </section>

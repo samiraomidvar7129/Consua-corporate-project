@@ -5,6 +5,10 @@ import Explorations from "./explorations";
 import WorkTime from "./workTime";
 import FooterText from "./footerText";
 
+// import react-lazy-load-------------------------------->
+
+import {LazyLoadImage} from 'react-lazy-load-image-component';
+
 
 
 
@@ -26,7 +30,7 @@ const Footer = () => {
         </div>
       </div>
       <span className="footer-shape">
-        <img src="images/Shape/times.png" alt="times-img"/>
+        <LazyLoadImage src="images/Shape/times.png" alt="times-img" loading="lazy"/>
       </span>
     </section>
   );

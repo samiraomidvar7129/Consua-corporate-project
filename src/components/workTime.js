@@ -1,11 +1,15 @@
 import React from "react";
 import "../index.css";
 
+// import react-lazy-load-------------------------------->
+
+import {LazyLoadImage} from 'react-lazy-load-image-component';
+
 const WorkTime = () => {
   return (
     <div className="workTime-parent">
       <span className="workTime-logoBox">
-        <img src="images/Logo/logo-light.png" alt="logo-light.png" />
+        <LazyLoadImage src="images/Logo/logo-light.png" alt="logo-light.png" loading="lazy" />
       </span>
       <p className="workTime-txt">
         لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده

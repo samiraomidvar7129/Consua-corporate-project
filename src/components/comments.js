@@ -7,7 +7,10 @@ import "swiper/css";
 import "swiper/css/free-mode";
 import "swiper/css/pagination";
 
-// import './styles.css';
+// import react-lazy-load-------------------------------->
+
+import {LazyLoadImage} from 'react-lazy-load-image-component';
+
 
 // import required modules
 import { FreeMode, Autoplay } from "swiper/modules";
@@ -53,7 +56,7 @@ const Comments = () => {
           <SwiperSlide className="swiperSlide">
             <div className="swiperSlide-content">
               <div className="swiperSlide-conten_avatar">
-                <img src="images/Users/avatar-1.jpg" />
+                <LazyLoadImage src="images/Users/avatar-1.jpg" loading="lazy" />
               </div>
               <div className="swiperSlide-content_title">
                 <h4>بسیار توصیه شده</h4>
@@ -73,7 +76,7 @@ const Comments = () => {
           <SwiperSlide className="swiperSlide">
             <div className="swiperSlide-content">
               <div className="swiperSlide-conten_avatar">
-                <img src="images/Users/avatar-2.jpg" />
+                <LazyLoadImage src="images/Users/avatar-2.jpg" loading="lazy" />
               </div>
               <div className="swiperSlide-content_title">
                 <h4>بسیار توصیه شده</h4>
@@ -93,7 +96,7 @@ const Comments = () => {
           <SwiperSlide className="swiperSlide">
             <div className="swiperSlide-content">
               <div className="swiperSlide-conten_avatar">
-                <img src="images/Users/avatar-3.jpg" />
+                <LazyLoadImage src="images/Users/avatar-3.jpg" loading="lazy" />
               </div>
               <div className="swiperSlide-content_title">
                 <h4>بسیار توصیه شده</h4>
@@ -113,7 +116,7 @@ const Comments = () => {
           <SwiperSlide className="swiperSlide">
             <div className="swiperSlide-content">
               <div className="swiperSlide-conten_avatar">
-                <img src="images/Users/avatar-1.jpg" />
+                <LazyLoadImage src="images/Users/avatar-1.jpg"  loading="lazy" />
               </div>
               <div className="swiperSlide-content_title">
                 <h4>بسیار توصیه شده</h4>
@@ -133,7 +136,7 @@ const Comments = () => {
           <SwiperSlide className="swiperSlide">
             <div className="swiperSlide-content">
               <div className="swiperSlide-conten_avatar">
-                <img src="images/Users/avatar-2.jpg" />
+                <LazyLoadImage src="images/Users/avatar-2.jpg" loading="lazy" />
               </div>
               <div className="swiperSlide-content_title">
                 <h4>بسیار توصیه شده</h4>
@@ -153,7 +156,7 @@ const Comments = () => {
           <SwiperSlide className="swiperSlide">
             <div className="swiperSlide-content">
               <div className="swiperSlide-conten_avatar">
-                <img src="images/Users/avatar-3.jpg" />
+                <LazyLoadImage src="images/Users/avatar-3.jpg" loading="lazy" />
               </div>
               <div className="swiperSlide-content_title">
                 <h4>بسیار توصیه شده</h4>

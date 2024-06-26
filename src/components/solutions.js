@@ -1,6 +1,7 @@
 import React from "react";
 import "../index.css";
 
+
 const Solutions = () => {
   return (
     <section className="solution-wrapper">

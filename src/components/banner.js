@@ -2,6 +2,11 @@ import React from "react";
 import { PiChartPieSliceThin } from "react-icons/pi";
 import { PiUserSwitchThin } from "react-icons/pi";
 
+// import react-lazy-load-------------------------------->
+
+import {LazyLoadImage} from 'react-lazy-load-image-component';
+
+
 
 
 
@@ -11,10 +16,11 @@ const Banner = () => {
       <div className="banner-inner">
         <div className="banner-inner_itemRight">
           <div className="banner-inner_itemRight--imgBox">
-            <img
+            <LazyLoadImage
               src="images/Banner/banner.jpg"
               className="banner-inner_itemRight--img"
               alt="banner-img"
+              loading="lazy"
             />
           </div>
         </div>

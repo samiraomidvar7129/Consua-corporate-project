@@ -21,6 +21,10 @@ import Banner from "./banner";
 import Comments from './comments';
 import News from "./news";
 
+// import react-lazy-load-------------------------------->
+
+import {LazyLoadImage} from 'react-lazy-load-image-component';
+
 
 
 const Home = () => {
@@ -68,15 +72,18 @@ const Home = () => {
           </SwiperSlide>
         </Swiper>
         <div className="slider-imgBox">
-          <img
+          <LazyLoadImage
             src="images/Slider-img/sliderImg.png"
             className="slider-imgBox_img"
             alt="slideImage"
+            loading="lazy"
           />
-          <img
+          <LazyLoadImage
             src="images/Shape/shape.png"
             className="slider-imgBox_shape"
             alt="shape"
+            loading="lazy"
+
           />
         </div>
       </section>
