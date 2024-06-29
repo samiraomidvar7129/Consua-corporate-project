@@ -1,6 +1,4 @@
 
-![Uploading Corporate-project.png…]()
-
 
 
 # پروژه شرکتی ری اکت
