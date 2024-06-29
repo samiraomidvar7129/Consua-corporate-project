@@ -1,70 +1,50 @@
-# Getting Started with Create React App
+# پروژه شرکتی ری اکت
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## پروژه شرکتی 
 
-## Available Scripts
+این پروژه یک وبسایت شرکتی است که با کتابخانه محبوب ری اکت پیاده سازی شده است . هدف از این پروژه معرفی خدمات و پروژ های انجام شده توسط آن میباشد .
 
-In the project directory, you can run:
+## ویژه گی ها 
 
-### `npm start`
+-**نمایش لیست پروژه ها ی شرکت با استفاده از کتابخانه redux**
+-**فرم تماس برای ارسال پیام و ارتباط مستقیم با شرکت**
+-**دارای فرم ثبت نام برای عضویت کاربران در وبسایت**
+ـ**مدیریت و اعتبار سنجی فرم ها با yup**
+-**طراحی واکنشگرا**
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## ابزارها و تکتولوژی های استفاده شده
 
-### `npm test`
+-**ری اکت (React): یک کتابخانه جاوااسکریپت برای ایجاد رابط های کاربری**
+-**ریداکس(Redux) : یک مخزن مدیریت وضعیت برای برنامه های جاوااسکریپت**
+-**ری اکت روتر(React Router) : مسیریابی بیانی برای برنامه های ری اکت**
+-**اکسیوس(Axios) : کتابخانه HTTP است که برای ارسال و دریافت درخواست‌های HTTP از سمت کلاینت استفاده می‌شود**
+-**فورمیک (Formik) : یرای ساخت انواع فرم ها در برنامه های React**
+-**یاپ (Yup) : سازنده ی شمای جاوااسکریپت برای تجزیه و اعتبارسنجی مقادیر ورودی فرم ها**
+-**ری اکت لیفلت (React-Leaflet) : برای ایجاد نقشه در برنامه های ری اکت**
+-**ری اکت لیزی لود (React-Lazy-Load) : برای ایجاد افکت lazy برای تصاویر موجود در برنامه**
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## پیش نیازها
+-**مروگر وب مدرن (Google Chrome , Safari , Firefox  , ....)**
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## نحوه ی استفاده از برنامه
+برای راه اندازی برنامه روی سیستم محلی خود مراحل زیر را دنبال کنید .
+###.1 کلون کردن مخزن 
+git clone https://github.com/samiraomidvar7129/corporate-project-react.git
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+###.2 نصب وابستگی ها 
+npm install Or yarn install
 
-### `npm run eject`
+###.3 اجرای برنامه 
+npm start
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+بعد از اجرای مراحل برنامه بر روی پورت 3001 اجرا خواهد شد .
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## توسعه دهنده ( FrontEnd Developer )
+-**سمیرا امیدوار - Samira Omidvar**
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
