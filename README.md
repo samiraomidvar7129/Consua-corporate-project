@@ -47,7 +47,7 @@ npm start
 بعد از اجرای مراحل برنامه بر روی پورت 3000 اجرا خواهد شد .
 
 
-# توسعه دهنده ( FrontEnd Developer )
+## توسعه دهنده ( FrontEnd Developer )
 -**سمیرا امیدوار - Samira Omidvar**
 
 
