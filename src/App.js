@@ -35,9 +35,6 @@ const App = () => {
 
 // handleChangeLanguage function
 
-
-
-
   return (
     <Provider store={store}>
       <nav className="navbar-wrapper">
