@@ -1,9 +1,4 @@
-![Corporate-project](https://github.com/samiraomidvar7129/corporate-project-react/assets/93695009/9be20cc8-512a-4efd-955a-46b8071554ab)
-
-![Screenshot1](https://github.com/user-attachments/assets/c8b82b07-ffcc-4989-b2b9-8454766bf1a2)
-
-![Screenshot 2](https://github.com/user-attachments/assets/55ed389b-efc4-40e6-95e5-4760b92e655f)
-
+![screencapture](https://github.com/user-attachments/assets/ebfc7580-4016-4937-80e6-d692c7af54a6)
 
 
 
