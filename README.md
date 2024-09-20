@@ -1,5 +1,9 @@
 ![screencapture-localhost-3001-2024-09-20-10_15_14](https://github.com/user-attachments/assets/7e4fedb3-6a7f-497d-a970-d8cfa48b0db1)
 
+![about](https://github.com/user-attachments/assets/aee86cc1-6b1b-414e-b384-c6a57ffb111f)
+
+
+
 
 
 
