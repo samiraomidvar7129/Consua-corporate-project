@@ -1,18 +1,4 @@
-/* Import Font */
-
-/* Yekan Font */
-
-@font-face {
-  font-family: "Yekan";
-  src: local("Yekan"), url("./fonts/Yekan.ttf") format("truetype");
-}
-
-/* Khodkar Font */
-
-@font-face {
-  font-family: "Khodkar";
-  src: local("Khodkar"), url("./fonts/Far.Khodkar.ttf") format("truetype");
-}
+@import './fonts.css';
 
 /* General Styles */
 
@@ -24,12 +10,12 @@
   box-sizing: border-box;
   text-decoration: none;
   list-style: none;
-  font-family: "Yekan";
-  font-weight: normal;
 }
 html,
 body {
+  font-family: "yekan", sans-serif;
   direction: rtl;
+  padding: 50px;
 }
 img {
   display: block;
@@ -41,13 +27,15 @@ input::placeholder {
   font-size: 12px;
 }
 
+.logoText{
+  font-family: "youkiss";
+}
 /*  Home Component Styles */
 
 .slider-wrapper {
-  margin-top: 70px;
   background-color: transparent;
   width: 100%;
-  height: 85vh;
+  height: 70vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -56,20 +44,26 @@ input::placeholder {
 .slider-imgBox {
   width: 50%;
   height: 100%;
-  padding: 0;
-  position: relative;
+  padding: 80px;
+  padding: 0
 }
 .slider-imgBox_img {
-  position: absolute;
-  top: 0;
-  left: 20px;
-  z-index: 11;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 58% 42% 33% 67% / 60% 35% 65% 40%;  
+  animation: morph 6s infinite ease-in-out;
 }
-.slider-imgBox_shape {
-  position: absolute;
-  top: 0;
-  left: 9px;
-  z-index: 2;
+@keyframes morph {
+  0% {
+    border-radius: 50% 40% 60% 50% / 60% 50% 40% 50%;
+  }
+  50% {
+    border-radius: 60% 50% 40% 70% / 50% 60% 50% 60%;
+  }
+  100% {
+    border-radius: 50% 40% 60% 50% / 60% 50% 40% 50%;
+  }
 }
 .mySwiper {
   padding: 20px;
@@ -92,9 +86,9 @@ input::placeholder {
 }
 .mySwiper-txt {
   color: #010101 !important;
-  font-size: 12px;
+  font-size: 16px;
   text-align: right;
-  line-height: 28px;
+  line-height: 37px;
 }
 
 /* CounselingBtn Component Styles */
@@ -130,10 +124,10 @@ input::placeholder {
 
 .navbar-wrapper {
   width: 100%;
-  height: 60px;
+  height: 80px;
   margin: 0 auto;
   background: #ffff;
-  border-bottom: 1px solid rgba(192, 192, 192, 0.498);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   padding: 10px;
   border-radius: 3px;
   display: flex;
@@ -145,6 +139,7 @@ input::placeholder {
   left: 0;
   z-index: 9999999;
   direction: ltr;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 .navbar-nav {
   width: 75%;
@@ -183,14 +178,19 @@ input::placeholder {
   color: #010101;
 }
 .logo-box {
-  width: 100px;
+  width: auto;
   height: 100%;
   letter-spacing: 3px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
+.logo-box h4{
+  font-size: 40px;
+  background: linear-gradient(90deg, #df0a0a, #ff5555);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent}
 .navbar-login {
   height: 100%;
   width: 15%;
@@ -241,9 +241,9 @@ input::placeholder {
 
 .solution-text {
   margin-top: 15px;
-  line-height: 30px;
+  line-height: 32px;
   text-align: justify;
-  font-size: 12px;
+  font-size: 16px;
 }
 .solution-h2{
     margin-bottom: 15px;
@@ -292,9 +292,9 @@ input::placeholder {
   width: 80%;
   margin: 10px auto;
   color: gray;
-  font-size: 12px;
+  font-size: 16px;
   text-align: justify;
-  line-height: 28px;
+  line-height: 32px;
 }
 .solution-boxRight_counter {
   width: 100%;
@@ -348,43 +348,85 @@ input::placeholder {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row-reverse;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   padding: 10px;
   margin-top: 40px;
 }
+
 .card-item {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  width: 200px;
+  padding: 20px;
+  width: 300px;
   height: auto;
+  background: linear-gradient(145deg, #f0f0f0, #ffffff);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  transition: all 0.3s ease-in-out;
+}
+
+.card-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
 }
 .services-icon {
-  font-size: 30px;
+  font-size: 40px;
   margin-bottom: 10px;
   position: relative;
+  color: #333; /* رنگ پیش‌فرض برای آیکون */
+  transition: transform 0.3s ease, color 0.3s ease; /* انیمیشن برای تغییرات */
 }
+
+.services-icon:hover {
+  transform: scale(1.1); /* بزرگتر شدن آیکون */
+  color: rgb(223, 10, 10); /* تغییر رنگ به قرمز جذاب */
+}
+
 .services-icon::after {
   content: "";
   position: absolute;
   top: 40px;
   left: -15px;
   width: 60px;
-  height: 2px;
-  background-color: rgb(223, 10, 10);
+  height: 4px;
+  background: linear-gradient(90deg, #df0a0a, #ff5555);
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(223, 10, 10, 0.4);
+  transform: rotate(-2deg);
+  transition: all 0.3s ease;
 }
+
+.services-icon:hover::after {
+  width: 70px; /* افزایش عرض خط هنگام hover */
+  transform: rotate(0deg); /* صاف کردن خط هنگام hover */
+}
+
+.services-icon::after {
+  content: "";
+  position: absolute;
+  top: 40px;
+  left: -15px;
+  width: 60px;
+  height: 4px;
+  background: linear-gradient(90deg, #df0a0a, #ff5555);
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(223, 10, 10, 0.4);
+  transform: rotate(-2deg);
+}
+
 .card-item-title {
-  font-size: 13px;
+  font-size: 18px;
   padding: 10px 0;
 }
 .card-item-p {
-  font-size: 12px;
+  font-size: 16px;
   margin-top: 10px;
   color: #5a5858;
   text-align: center;
-  line-height: 20px;
+  line-height: 32px;
   padding: 10px;
 }
 
@@ -428,7 +470,7 @@ input::placeholder {
   z-index: 9999;
   width: 100px;
   height: 100px;
-  background-color: rgb(192, 51, 51);
+  background: linear-gradient(90deg, #df0a0a, #ff5555);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -465,15 +507,15 @@ input::placeholder {
     font-size: 20px;
 }
 .banner-inner_itemLeft--txt{
-    font-size: 12px;
-    line-height: 28px;
+    font-size: 16px;
+    line-height: 37px;
 }
 .banner-inner_itemLeft--icon {
-  font-size: 30px;
+  font-size: 40px;
   color: rgb(192, 51, 51);
 }
 .banner-inner_itemLeft--text-h5{
-    font-size: 12px;
+    font-size: 14px;
 }
 
 
@@ -491,6 +533,13 @@ input::placeholder {
   color: #ffff;
   margin-top: 10px;
   font-size: 16px;
+}
+.comments-title h3 {
+  font-size: 30px;
+  background: linear-gradient(90deg, #df0a0a, #ff5555);
+  -webkit-background-clip: text;
+  background-clip: text; 
+  color: transparent; 
 }
 .comments-slider {
   width: 100%;
@@ -533,8 +582,20 @@ cursor: pointer;
 }
 .swiperSlide-content_text {
   padding: 20px 0;
-  font-size: 12px;
-  color: rgb(131,131,131);
+  font-size: 14px;
+  line-height: 32px;
+  text-align: justify;
+  color: #2a2828;
+}
+.swiperSlide-content_title{
+  display: flex; 
+  justify-content: space-around;
+  align-items: center;
+  color: green;
+}
+.swiperSlide-content_title--ico{
+ font-size: 20px;
+ margin-right: 10px;
 }
 .swiperSlide-content_userName {
     width: 100%;
@@ -546,8 +607,8 @@ cursor: pointer;
   margin-top: 20px;
 }
 .swiperSlide-content_name{
-    font-size: 12px;
-    color: rgb(131,131,131);
+  font-size: 16px;
+  color: green;
 }
 .swiperSlide-content_userName span {
   width: 50%;
@@ -571,6 +632,11 @@ cursor: pointer;
     margin-top: 50px;
 }
 .news-title{
+  font-size: 20px;
+  background: linear-gradient(90deg, #df0a0a, #ff5555);
+  -webkit-background-clip: text;
+  background-clip: text; 
+  color: transparent; 
     text-align: center;
     margin: 30px auto;
 }

@@ -14,9 +14,6 @@ import LogoBox from "./components/logoBox";
 import { CiUser } from "react-icons/ci";
 import { IoIosPhonePortrait } from "react-icons/io";
 
-
-
-
 const App = () => {
   const [active, setActive] = useState("navbar-menu");
   const [toggleIcon, setToggleIcon] = useState("navbar-toggler");
@@ -31,9 +28,7 @@ const App = () => {
       : setToggleIcon("navbar-toggler");
   };
 
-
-
-// handleChangeLanguage function
+  // handleChangeLanguage function
 
   return (
     <Provider store={store}>
@@ -62,13 +57,11 @@ const App = () => {
         </ul>
 
         <div className="navbar-login">
-      
           <div className="phone-icon">
             <IoIosPhonePortrait /> <h6>۰۹۳۳۹۶۱۰۸۴۱</h6>
           </div>
           <div>
             <Link to="/login" title="login">
-             
               <span className="user-icon">
                 <CiUser />
               </span>
@@ -76,7 +69,6 @@ const App = () => {
           </div>
         </div>
       </nav>
-  
 
       <Routes>
         <Route path="/" element={<Home />}></Route>

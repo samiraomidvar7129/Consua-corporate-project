@@ -4,11 +4,7 @@ import { PiUserSwitchThin } from "react-icons/pi";
 
 // import react-lazy-load-------------------------------->
 
-import {LazyLoadImage} from 'react-lazy-load-image-component';
-
-
-
-
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 const Banner = () => {
   return (
@@ -30,31 +26,41 @@ const Banner = () => {
               مشاوره مالی برای زمان چالش برانگیز
             </h2>
             <p className="banner-inner_itemLeft--txt">
-              لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
-              استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله
-              در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد
-              نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.
+              در شرایط اقتصادی ناپایدار، تصمیم‌گیری‌های مالی صحیح و به‌موقع
+              می‌تواند آینده کسب‌وکار شما را تغییر دهد. ما با تحلیل دقیق وضعیت
+              مالی و شناسایی فرصت‌ها و تهدیدها، راه‌حل‌های بهینه برای عبور از
+              بحران‌ها ارائه می‌دهیم. استراتژی‌های ما بر پایه‌ی کاهش ریسک و
+              افزایش نقدینگی متمرکز است تا شما را در مسیر رشد پایدار هدایت کند.
+              با مشاوره مالی تخصصی، از فشارهای اقتصادی کاسته و به سمت بازسازی و
+              تقویت مالی پیش بروید. تیم ما در کنار شماست تا با استراتژی‌های
+              حساب‌شده، به بهترین نتیجه ممکن دست یابید. همراه با شما در هر مرحله
+              از این چالش‌ها، راه‌حل‌هایی مطمئن و هوشمندانه خواهیم یافت.
             </p>
             <div className="banner-inner_itemLeft--items">
               <div className="banner-inner_itemLeft--items-boxRight">
                 <div className="banner-inner_itemLeft--iconBox">
                   <i className=" banner-inner_itemLeft--icon">
-                    <PiChartPieSliceThin/>
+                    <PiChartPieSliceThin />
                   </i>
                 </div>
-                  <div className="banner-inner_itemLeft--text">
-                    <h5 className="banner-inner_itemLeft--text-h5"> هدف گذاری و موقعیت یابی</h5>
-                  </div>
+                <div className="banner-inner_itemLeft--text">
+                  <h5 className="banner-inner_itemLeft--text-h5">
+                    هدف گذاری و موقعیت یابی
+                  </h5>
+                </div>
               </div>
               <div className="banner-inner_itemLeft--items-boxLeft">
-              <div className="banner-inner_itemLeft--iconBox">
+                <div className="banner-inner_itemLeft--iconBox">
                   <i className=" banner-inner_itemLeft--icon">
-                    <PiUserSwitchThin/>
+                    <PiUserSwitchThin />
                   </i>
                 </div>
-                  <div className="banner-inner_itemLeft--text">
-                    <h5 className="banner-inner_itemLeft--text-h5"> ایده های منحصر به فرد    </h5>
-                  </div>
+                <div className="banner-inner_itemLeft--text">
+                  <h5 className="banner-inner_itemLeft--text-h5">
+                    {" "}
+                    ایده های منحصر به فرد{" "}
+                  </h5>
+                </div>
               </div>
             </div>
           </div>

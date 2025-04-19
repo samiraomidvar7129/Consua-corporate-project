@@ -1,0 +1,8 @@
+@font-face {
+    font-family: "yekan";
+    src: local("yekan"), url("./fonts/Yekan.ttf") format("truetype");
+  }  
+  @font-face {
+    font-family: "youkiss";
+    src: local("youkiss"), url("./fonts/YOUKISS.ttf") format("truetype");
+  }
