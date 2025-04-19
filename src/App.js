@@ -34,7 +34,7 @@ const App = () => {
     <Provider store={store}>
       <nav className="navbar-wrapper">
         <LogoBox className="logoBox" />
-        <div className="navbar-toggler" onClick={navToggler}>
+        <div className={toggleIcon} onClick={navToggler}>
           <div className="line1"></div>
           <div className="line2"></div>
           <div className="line3"></div>

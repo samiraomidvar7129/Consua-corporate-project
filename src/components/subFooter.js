@@ -3,7 +3,7 @@ import {Link} from 'react-router-dom'
 
 const SubFooter = () => {
   return (
-    <div className="subFooter-parent">
+    <div className="">
       <div className="subFooter-inner">
         <div className="subFooter-inner_item">
           <h6>1402 © تمامی حقوق برای قالب کانسوا محفوظ است.</h6>
