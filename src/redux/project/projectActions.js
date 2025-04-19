@@ -28,6 +28,8 @@ const fetchProjectFaillur=(errorMesage)=>{
         dispatch (fetchProjectRequest());
          axios.get('http://localhost:3000/projects')
         .then(response=>{
+            console.log("projects fetched: ", response.data);
+
             dispatch(fetchProjectSuccess(response.data))
         })
         .catch(error=>{
@@ -37,5 +39,3 @@ const fetchProjectFaillur=(errorMesage)=>{
 }
 
 export default fetchProjects;
-
-

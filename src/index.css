@@ -702,10 +702,10 @@ input::placeholder {
   text-align: center;
   padding: 20px;
   color: #ffff;
-  margin-top: 50px;
+  margin: 0 auto;
 }
 .projects-title {
-  color: #010101;
+color: #5b21b6;
   margin-top: 30px;
 }
 .projects-slider {
@@ -731,11 +731,13 @@ input::placeholder {
   height: 100%;
 }
 .mySwiper-content h5 {
-  margin-top: 12px;
-  color: #010101;
+  font-size: 18px;
+  margin-top: 18px;
+  color: #5b21b6;
 }
 .mySwiper-content h6 {
-  margin-top: 15px;
+  font-size: 16px;
+  margin-top: 16px;
   color: #010101;
 }
 
