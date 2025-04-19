@@ -3,13 +3,13 @@ import "../index.css";
 
 // import react-lazy-load-------------------------------->
 
-import {LazyLoadImage} from 'react-lazy-load-image-component';
+import LogoBox from "./logoBox";
 
 const WorkTime = () => {
   return (
     <div className="workTime-parent">
       <span className="workTime-logoBox">
-        <LazyLoadImage src="images/Logo/logo-light.png" alt="logo-light.png" loading="lazy" />
+      <LogoBox className="logoBox" />
       </span>
       <p className="workTime-txt">
         لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده

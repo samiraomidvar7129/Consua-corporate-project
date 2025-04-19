@@ -34,14 +34,13 @@ const App = () => {
     <Provider store={store}>
       <nav className="navbar-wrapper">
         <LogoBox className="logoBox" />
-
         <div className="navbar-toggler" onClick={navToggler}>
           <div className="line1"></div>
           <div className="line2"></div>
           <div className="line3"></div>
         </div>
-
-        <ul className={active}>
+        <div>
+          <ul className={active}>
           <li className="navbar-link">
             <Link to="/">صفحه اصلی</Link>
           </li>
@@ -54,22 +53,20 @@ const App = () => {
           <li className="navbar-link">
             <Link to="/contact-us"> ارتباط باما</Link>
           </li>
-        </ul>
-
+        </ul></div>
         <div className="navbar-login">
           <div className="phone-icon">
-            <IoIosPhonePortrait /> <h6>۰۹۳۳۹۶۱۰۸۴۱</h6>
+            <IoIosPhonePortrait className="phone-icon_ico"/> <h6>۰۹۳۳۹۶۱۰۸۴۱</h6>
           </div>
           <div>
             <Link to="/login" title="login">
               <span className="user-icon">
-                <CiUser />
+                <CiUser className="user-icon_ico" />
               </span>
             </Link>
           </div>
         </div>
       </nav>
-
       <Routes>
         <Route path="/" element={<Home />}></Route>
         <Route path="/projects" element={<Projects />}></Route>
@@ -77,7 +74,6 @@ const App = () => {
         <Route path="/contact-us" element={<ContactUs />}></Route>
         <Route path="/login" element={<Login />}></Route>
       </Routes>
-
       <Footer />
       <SubFooter />
     </Provider>

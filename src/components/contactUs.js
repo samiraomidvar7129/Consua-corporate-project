@@ -9,9 +9,6 @@ import { TiLocationOutline } from "react-icons/ti";
 import { MdOutlineMarkEmailUnread } from "react-icons/md";
 import { FiSend } from "react-icons/fi";
 
-
-
-
 const ContactUs = () => {
   const formik = useFormik({
     initialValues: {
@@ -34,8 +31,7 @@ const ContactUs = () => {
 
   return (
     <>
-      <ContactBanner />
-
+      <ContactBanner/>
       <section className="contactUs-parent">
         <div className="contactUs-parent_innerItem ">
           <h4 className="contactUs-title"> سوالی دارید ؟ پیام ارسال کنید </h4>
@@ -45,7 +41,7 @@ const ContactUs = () => {
                 <div className="form-control input-item">
                   <div className="input-item_inner">
                     <div>
-                      <label htmlFor="userName"> : نام کاربری</label>
+                      <label htmlFor="userName">  نام کاربری</label>
                     </div>
                     <input
                       type="text"
@@ -66,7 +62,7 @@ const ContactUs = () => {
                 <div className="form-control input-item">
                   <div className="input-item_inner">
                     <div>
-                      <label htmlFor="userEmail"> : ایمیل</label>
+                      <label htmlFor="userEmail"> ایمیل</label>
                     </div>
                     <input
                       type="email"
@@ -87,7 +83,9 @@ const ContactUs = () => {
                 </div>
                 <div className="form-control">
                   <button type="submit" className="submit-btn">
-                  <span><FiSend/></span>
+                    <span>
+                      <FiSend />
+                    </span>
                     درتماس باشید
                   </button>
                 </div>
@@ -99,8 +97,8 @@ const ContactUs = () => {
           <div className="contactUs-parent_innerItem--title">
             <h2>اطلاعات تماس</h2>
             <p>
-              لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
-              استفاده از طراحان گرافیک است
+              برای دریافت مشاوره تخصصی یا ارتباط با تیم ما، کافیست فرم زیر را
+              تکمیل کنید. ما در سریع‌ترین زمان ممکن پاسخ‌گوی شما خواهیم بود.
             </p>
           </div>
           <div className="contactUs-detailesـparent">
@@ -136,10 +134,7 @@ const ContactUs = () => {
           </div>
         </div>
       </section>
-
-       <Map/>
+      <Map />
     </>
-  );
-};
-
+  )}
 export default ContactUs;
